@@ -40,6 +40,23 @@ body {
     height: 50px;
 }
 
+#user-profile {
+    float: right;
+    visibility: hidden;
+}
+
+#user-img {
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+#user-name {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+
 #separator {
     background-color:rgb(163, 167, 173);
     margin-bottom: 10px;
