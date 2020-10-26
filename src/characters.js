@@ -1,4 +1,4 @@
-{
+const characters = {
     "amber" : {
         "ascension" : "agnidus-agate,everflame-seed,small-lamp-grass,arrowhead",
         "talents" : "freedom,unknown,arrowhead"
@@ -103,4 +103,4 @@
         "ascension" : "prithiva-topaz,basalt-pillar,cor-lapis,slime",
         "talents" : "gold,unknown,slime"
     }
-}
+};

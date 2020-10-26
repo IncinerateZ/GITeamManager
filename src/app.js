@@ -5,6 +5,9 @@ const polearmlist = ["beginners-protector", "black-tassel", "blackcliff-pole", "
 const swordlist = ["aquila-favonia", "blackcliff-longsword", "cool-steel", "dark-iron-sword", "dull-blade", "favonius-sword", "fillet-blade", "harbinger-of-dawn", "iron-sting", "lions-roar", "prototype-rancour", "royal-longsword", "sacrificial-sword", "silver-sword", "skyrider-sword", "skyward-blade", "the-alley-flash", "the-black-sword", "the-flute", "travelers-handy-sword"];
 const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist];
 
+var charactersjson;
+var weaponsjson;
+var materialsjson;
 
 var prevcharselected;
 var charselected = "amber";
@@ -48,6 +51,11 @@ window.onload = function() {
             weaponselect(e.target);
         }
     })
+
+    charactersjson = characters;
+    
+    materialsjson = materials;
+
 }
 
 var avatarselect = charicon => {

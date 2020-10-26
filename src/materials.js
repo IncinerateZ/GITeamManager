@@ -1,4 +1,4 @@
-{
+const materials = {
     "aerosiderite" : {
         "2" : "grain-of-aerosiderite",
         "3" : "piece-of-aerosiderite",
@@ -98,6 +98,6 @@
     "slime" : {
         "2" : "slime-condensate",
         "3" : "slime-secretions",
-        "4" : "slime-cone"
+        "4" : "slime-concentrate"
     }
 }
