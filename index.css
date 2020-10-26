@@ -21,6 +21,10 @@ body {
     float: left;
 }
 
+.selector-title {
+    font-weight: bold;
+}
+
 .thin {
     height: 1px;
 }
@@ -35,16 +39,25 @@ body {
     float: right;
 }
 
-.character-icon {
+.icon {
     width: 50px;
     height: 50px;
     float: left;
     margin: 2px;
 }
 
-.char-avatar {
+.avatar {
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+.name {
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 #content-container {
@@ -56,16 +69,34 @@ body {
     height: 50px;
 }
 
+#selector-container {
+    padding-top: 0px;
+}
+
 #character-bar-container {
-    padding-top: 40px;
+    margin-left: 20px;
+    float: left;
+}
+
+#weapon-bar-container {
+    margin-left: 20px;
+    float: left;
+    transform: translateY(-15px);
+}
+
+.bar {
+    border: 2px solid black;
+    padding: 1px;
 }
 
 #character-bar {
-    width: 486px;
-    height: 164px;
-    margin: auto;
-    border: 2px solid black;
-    padding: 1px;
+    width: 164px;
+    height: 486px;
+}
+
+#weapon-bar {
+    width: 542px;
+    height: 542px;
 }
 
 #user-profile {
