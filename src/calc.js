@@ -78,9 +78,18 @@ var charexp = (b, a) => {
     return rules["charlevels"][b] - rules["charlevels"][a];
 }
 
-//mora needed for N xp
+var wpexp = (b, a) => {
+    return rules["wplevels"][b] - rules["wplevels"][a];
+}
+
+//mora needed for N char xp
 var xpcost = xp => {
     return xp/5;
+}
+
+//mora needed for N wp xp
+var xpcost1 = xp => {
+    return xp/10;
 }
 
 export default calc;

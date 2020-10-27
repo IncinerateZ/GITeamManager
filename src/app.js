@@ -1,4 +1,5 @@
 import calc from './calc.js';
+import rules from './rules.js';
 
 //xp to go to level N = levels[N] - levels[N-1]
 //mora cost = 5xp per mora
