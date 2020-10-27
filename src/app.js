@@ -26,7 +26,7 @@ var prevweapselected;
 var weapselected = "alley-hunter";
 
 var charname = "Amber";
-var weapname = "Alley Hunter";
+var weapname = "Alley Hunter";  
 
 window.onload = function() {
     var characterlist = document.getElementsByClassName("character");
@@ -69,7 +69,8 @@ window.onload = function() {
     weapend.addEventListener("keydown", (e) => forceNumFormat(e));
     startbtn.addEventListener("click", () => {
         console.log(calc(charselected, charstart.value, charend.value, "char"));
-    })
+        console.log(calc(weapselected, weapstart.value, weapend.value, "wp"));
+    });
 
 
     document.addEventListener("click", (e) => {
@@ -138,6 +139,7 @@ var nameextract = name => {
 }
 
 var currencyformat = amount => {
+    amount = Math.floor(amount);
     amount += "";
     let i = amount.length - 1;
     let c = 0;
@@ -148,5 +150,6 @@ var currencyformat = amount => {
         c++;
         i--;
     }
-    return res.split("").reverse().join("");
+    res = res.split("").reverse().join("")
+    return res;
 }

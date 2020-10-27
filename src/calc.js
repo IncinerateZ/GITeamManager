@@ -62,6 +62,30 @@ var calc = (name, start, end, type) => {
         res["mora"] = mora;
         res["mat"] = mat;
         return res;
+    } else if (type === "wp") {
+        var mats = weaponlist[name].split(",");
+        //get mora needed per level
+        let mora = xpcost2(wpexp(end, start));
+        let mat = {}
+        for(let l = start; l < end; l++) {
+            if(lvlceils.includes("" + l)) {
+                //calc mora needed per ascension
+                mora = parseInt(mora) + parseInt(rules["weapons"][l]["mora"]);
+                //get items needed per ascension
+                let b = rules["weapons"][l]["mcost"].split(",");
+                for(let i = 0; i < mats.length; i++) {
+                    let m = mats[i];
+                    if(parseInt(b[i].split("-")[0]) != 0) {
+                        m = materiallist[m][parseInt(b[i].split("-")[0])];
+                    }
+                    if(mat[m] == undefined) mat[m] = 0;
+                    mat[m] += parseInt(b[i].split("-")[1]);
+                }
+            }
+        }
+        res["mora"] = mora;
+        res["mat"] = mat;
+        return res;
     }
 }
 
@@ -88,7 +112,7 @@ var xpcost = xp => {
 }
 
 //mora needed for N wp xp
-var xpcost1 = xp => {
+var xpcost2 = xp => {
     return xp/10;
 }
 
