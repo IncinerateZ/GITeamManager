@@ -104,3 +104,5 @@ const characters = {
         "talents" : "gold,unknown,slime"
     }
 };
+
+export default characters;

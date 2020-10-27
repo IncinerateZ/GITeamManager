@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Genshin Impact Upgrade Utility</title>
         <link rel="stylesheet" href="index.css">
-        <script type="text/javascript" src="src/characters.js"></script>
-        <script type="text/javascript" src="src/materials.js"></script>
-        <script type="text/javascript" src="src/app.js"></script>
+        <!--<script type="text/javascript" src="src/characters.js"></script>
+        <script type="text/javascript" src="src/materials.js"></script>-->
+        <script type="module" src="src/app.js" async defer></script>
 
         <!---Google OAuth2--->
         <!---
@@ -34,7 +34,7 @@
         <div id="content-container">
             <div id="content">
                 <div id="selector-container">
-                    <div id="character-bar-container">
+                    <div class="bar-container">
                         <div class="name selector-title">Characters</div>
                         <div id="character-bar" class="bar">
                             <div class="icon character" id="amber"></div>
@@ -67,12 +67,18 @@
                         </div>
                         <div class="name" id="char-name">Amber</div>
                     </div>
-                    <div id="weapon-bar-container">
+                    <div id="weapon-bar-container" class="bar-container">
                         <div class="name selector-title">Weapons</div>
                         <div id="weapon-bar" class="bar">
                             
                         </div>
                         <div class="name" id="weapon-name">Alley Hunter</div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="name selector-title">Settings</div>
+                        <div id="setting-bar" class="bar">
+
+                        </div>
                     </div>
                 </div>
             </div>

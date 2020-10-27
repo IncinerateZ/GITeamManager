@@ -1,13 +1,16 @@
+import characterlist from '../src/characters.js';
+import materiallist from '../src/materials.js';
+import rules from '../src/rules.js';
+
+//xp to go to level N = levels[N] - levels[N-1]
+//mora cost = 5xp per mora
+
 const bowlist = ["alley-hunter", "amos-bow", "blackcliff-warbow", "compound-bow", "ebony-bow", "favonius-warbow", "hunters-bow", "messenger", "prototype-crescent", "raven-bow", "recurve-bow", "royal-bow", "rust", "sacrificial-bow", "seasoned-hunters-bow", "sharpshooters-oath", "skyward-harp", "slingshot", "the-stringless", "the-viridescent-hunt"];
 const catalystlist = ["amber-catalyst", "apprentices-notes", "blackcliff-amulet", "emerald-orb", "eye-of-perception", "favonius-codex", "lost-prayer-to-the-sacred-winds", "magic-guide", "mappa-mare", "otherworldly-story", "pocket-grimoire", "prototype-malice", "royal-grimoire", "sacrificial-fragments", "skyward-atlas", "solar-pearl", "the-widsith", "thrilling-tales-of-dragon-slayers", "twin-nephrite", "wine-and-song"];
 const greatswordlist = ["blackcliff-slasher", "bloodtainted-greatsword", "debate-club", "favonius-greatsword", "ferrous-shadow", "lithic-blade", "old-mercs-pal", "prototype-aminus", "quartz", "rainslasher", "royal-greatsword", "sacrificial-greatsword", "serpent-spine", "skyrider-greatsword", "skyward-pride", "the-bell", "waster-greatsword", "white-iron-greatsword", "whiteblind", "wolfs-gravestone"];
 const polearmlist = ["beginners-protector", "black-tassel", "blackcliff-pole", "crescent-pike", "deathmatch", "dragons-bane", "favonius-lance", "halberd", "iron-point", "kunwus-iris-rift", "lithic-spear", "primordial-jade-winged-spear", "prototype-grudge", "skyward-spine", "white-tassel"];
 const swordlist = ["aquila-favonia", "blackcliff-longsword", "cool-steel", "dark-iron-sword", "dull-blade", "favonius-sword", "fillet-blade", "harbinger-of-dawn", "iron-sting", "lions-roar", "prototype-rancour", "royal-longsword", "sacrificial-sword", "silver-sword", "skyrider-sword", "skyward-blade", "the-alley-flash", "the-black-sword", "the-flute", "travelers-handy-sword"];
 const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist];
-
-var charactersjson;
-var weaponsjson;
-var materialsjson;
 
 var prevcharselected;
 var charselected = "amber";
@@ -51,11 +54,6 @@ window.onload = function() {
             weaponselect(e.target);
         }
     })
-
-    charactersjson = characters;
-    
-    materialsjson = materials;
-
 }
 
 var avatarselect = charicon => {
@@ -118,4 +116,14 @@ var currencyformat = amount => {
         i--;
     }
     return res.split("").reverse().join("");
+}
+
+//xp needed to go to from a to b inclusive
+var exp = (b, a) => {
+    return rules["levels"][b] - rules["levels"][a];
+}
+
+//mora needed for N xp
+var xpcost = xp => {
+    return xp/5;
 }

@@ -101,3 +101,5 @@ const materials = {
         "4" : "slime-concentrate"
     }
 }
+
+export default materials;
