@@ -133,10 +133,6 @@ input[type=number] {
     padding-top: 0px;
 }
 
-#weapon-bar-container {
-    transform: translateY(-15px);
-}
-
 .bar-container {
     float: left;
     margin: 10px;
@@ -177,7 +173,6 @@ input[type=number] {
 }
 
 #setting-bar-container {
-    transform: translateY(56px);
 }
 
 #setting-bar {
