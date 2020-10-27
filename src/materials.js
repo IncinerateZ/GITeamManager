@@ -99,6 +99,72 @@ const materials = {
         "2" : "slime-condensate",
         "3" : "slime-secretions",
         "4" : "slime-concentrate"
+    },
+    "agnidus-agate" : {
+        "2" : "agnidus-agate-sliver",
+        "3" : "agnidus-agate-fragment",
+        "4" : "agnidus-agate-chunk",
+        "5" : "agnidus-agate-gemstone"
+    },
+    "varunada-lazurite" : {
+        "2" : "varunada-lazurite-sliver",
+        "3" : "varunada-lazurite-fragment",
+        "4" : "varunada-lazurite-chunk",
+        "5" : "varunada-lazurite-gemstone"
+    },
+    "prithiva-topaz" : {
+        "2" : "prithiva-topaz-sliver",
+        "3" : "prithiva-topaz-fragment",
+        "4" : "prithiva-topaz-chunk",
+        "5" : "prithiva-topaz-gemstone"
+    },
+    "vajrada-amethyst" : {
+        "2" : "vajrada-amethyst-sliver",
+        "3" : "vajrada-amethyst-fragment",
+        "4" : "vajrada-amethyst-chunk",
+        "5" : "vajrada-amethyst-gemstone"
+    },
+    "shivada-jade" : {
+        "2" : "shivada-jade-sliver",
+        "3" : "shivada-jade-fragment",
+        "4" : "shivada-jade-chunk",
+        "5" : "shivada-jade-gemstone"
+    },
+    "vayuda-turquoise" : {
+        "2" : "vayuda-turquoise-sliver",
+        "3" : "vayuda-turquoise-fragment",
+        "4" : "vayuda-turquoise-chunk",
+        "5" : "vayuda-turquoise-gemstone"
+    },
+    "freedom" : {
+        "2" : "teachings-of-freedom",
+        "3" : "guide-to-freedom",
+        "4" : "philosophies-of-freedom"
+    },
+    "resistance" : {
+        "2" : "teachings-of-resistance",
+        "3" : "guide-to-resistance",
+        "4" : "philosophies-of-resistance"
+    },
+    "ballad" : {
+        "2" : "teachings-of-ballad",
+        "3" : "guide-to-ballad",
+        "4" : "philosophies-of-ballad"
+    },
+    "prosperity" : {
+        "2" : "teachings-of-prosperity",
+        "3" : "guide-to-prosperity",
+        "4" : "philosophies-of-prosperity"
+    },
+    "diligence" : {
+        "2" : "teachings-of-diligence",
+        "3" : "guide-to-diligence",
+        "4" : "philosophies-of-diligence"
+    },
+    "gold" : {
+        "2" : "teachings-of-gold",
+        "3" : "guide-to-gold",
+        "4" : "philosophies-of-gold"
     }
 }
 

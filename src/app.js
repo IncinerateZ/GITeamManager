@@ -1,6 +1,4 @@
-import characterlist from '../src/characters.js';
-import materiallist from '../src/materials.js';
-import rules from '../src/rules.js';
+import calc from './calc.js';
 
 //xp to go to level N = levels[N] - levels[N-1]
 //mora cost = 5xp per mora
@@ -11,6 +9,8 @@ const greatswordlist = ["blackcliff-slasher", "bloodtainted-greatsword", "debate
 const polearmlist = ["beginners-protector", "black-tassel", "blackcliff-pole", "crescent-pike", "deathmatch", "dragons-bane", "favonius-lance", "halberd", "iron-point", "kunwus-iris-rift", "lithic-spear", "primordial-jade-winged-spear", "prototype-grudge", "skyward-spine", "white-tassel"];
 const swordlist = ["aquila-favonia", "blackcliff-longsword", "cool-steel", "dark-iron-sword", "dull-blade", "favonius-sword", "fillet-blade", "harbinger-of-dawn", "iron-sting", "lions-roar", "prototype-rancour", "royal-longsword", "sacrificial-sword", "silver-sword", "skyrider-sword", "skyward-blade", "the-alley-flash", "the-black-sword", "the-flute", "travelers-handy-sword"];
 const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist];
+
+var startbtn;
 
 var charstart;
 var charend;
@@ -59,11 +59,16 @@ window.onload = function() {
     weapend = document.querySelector('#weap-end');
     talent = document.querySelector('#talent');
 
+    startbtn = document.querySelector("#start-btn");
+
     //setting input box force charlength
     charstart.addEventListener("keydown", (e) => forceNumFormat(e));
     charend.addEventListener("keydown", (e) => forceNumFormat(e));
     weapstart.addEventListener("keydown", (e) => forceNumFormat(e));
     weapend.addEventListener("keydown", (e) => forceNumFormat(e));
+    startbtn.addEventListener("click", () => {
+        console.log(calc(charselected, charstart.value, charend.value, "char"));
+    })
 
 
     document.addEventListener("click", (e) => {
@@ -92,6 +97,7 @@ var avatarselect = charicon => {
     charicon.style.border = "2px solid gold";
     charname = charselected[0].toUpperCase() + charselected.substr(1, charselected.length);
     document.getElementById("char-name").innerHTML = charname;
+    //id = charselected
 }
 
 var weaponselect = weapicon => {
@@ -110,15 +116,11 @@ var weaponselect = weapicon => {
     weapicon.style.border = "2px solid gold";
     weapname = weapselected[0].toUpperCase() + weapselected.substr(1, weapselected.length);
     document.getElementById("weapon-name").innerHTML = nameextract(weapname);
+    //id = weapselected
 }
 
 var forceNumFormat = (e) => {
     if(e.target.value.length > 1) e.target.value = e.target.value.substr(0, 1);
-};
-
-var forceNumFormat2 = (e) => {
-    if(e.target.value > e.target.max) e.target.value = e.target.max;
-    if(e.target.value < e.target.min) e.target.value = e.target.min;
 };
 
 var nameextract = name => {
@@ -135,6 +137,7 @@ var nameextract = name => {
 }
 
 var currencyformat = amount => {
+    amount += "";
     let i = amount.length - 1;
     let c = 0;
     let res = "";
@@ -145,14 +148,4 @@ var currencyformat = amount => {
         i--;
     }
     return res.split("").reverse().join("");
-}
-
-//xp needed to go to from a to b inclusive
-var exp = (b, a) => {
-    return rules["levels"][b] - rules["levels"][a];
-}
-
-//mora needed for N xp
-var xpcost = xp => {
-    return xp/5;
 }

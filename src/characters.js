@@ -21,7 +21,7 @@ const characters = {
     },
     "chongyun" : {
         "ascension" : "shivada-jade,hoarfrost-core,cor-lapis,mask",
-        "talents" : "diligence,dvalins-sigh,mask    "
+        "talents" : "diligence,dvalins-sigh,mask"
     },
     "diluc" : {
         "ascension" : "agnidus-agate,everflame-seed,small-lamp-grass,insignia-2",
