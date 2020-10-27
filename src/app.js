@@ -12,6 +12,12 @@ const polearmlist = ["beginners-protector", "black-tassel", "blackcliff-pole", "
 const swordlist = ["aquila-favonia", "blackcliff-longsword", "cool-steel", "dark-iron-sword", "dull-blade", "favonius-sword", "fillet-blade", "harbinger-of-dawn", "iron-sting", "lions-roar", "prototype-rancour", "royal-longsword", "sacrificial-sword", "silver-sword", "skyrider-sword", "skyward-blade", "the-alley-flash", "the-black-sword", "the-flute", "travelers-handy-sword"];
 const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist];
 
+var charstart;
+var charend;
+var weapstart;
+var weapend;
+var talent;
+
 var prevcharselected;
 var charselected = "amber";
 
@@ -46,8 +52,22 @@ window.onload = function() {
             s.style.border = "2px solid gold";
         }
     }
+    //load settings
+    charstart = document.querySelector('#char-start');
+    charend = document.querySelector('#char-end');
+    weapstart = document.querySelector('#weap-start');
+    weapend = document.querySelector('#weap-end');
+    talent = document.querySelector('#talent');
+
+    //setting input box force charlength
+    charstart.addEventListener("keydown", (e) => forceNumFormat(e));
+    charend.addEventListener("keydown", (e) => forceNumFormat(e));
+    weapstart.addEventListener("keydown", (e) => forceNumFormat(e));
+    weapend.addEventListener("keydown", (e) => forceNumFormat(e));
+
 
     document.addEventListener("click", (e) => {
+        var tt = document.querySelector("#char-check");
         if(e.target.classList.contains("char")) {
             avatarselect(e.target);
         } else if (e.target.classList.contains("weap")) {
@@ -91,6 +111,15 @@ var weaponselect = weapicon => {
     weapname = weapselected[0].toUpperCase() + weapselected.substr(1, weapselected.length);
     document.getElementById("weapon-name").innerHTML = nameextract(weapname);
 }
+
+var forceNumFormat = (e) => {
+    if(e.target.value.length > 1) e.target.value = e.target.value.substr(0, 1);
+};
+
+var forceNumFormat2 = (e) => {
+    if(e.target.value > e.target.max) e.target.value = e.target.max;
+    if(e.target.value < e.target.min) e.target.value = e.target.min;
+};
 
 var nameextract = name => {
     let res = name;

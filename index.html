@@ -18,6 +18,7 @@
 
         <!---Google Fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="nav">
@@ -74,10 +75,66 @@
                         </div>
                         <div class="name" id="weapon-name">Alley Hunter</div>
                     </div>
-                    <div class="bar-container">
+                    <div class="bar-container" id="setting-bar-container">
                         <div class="name selector-title">Settings</div>
                         <div id="setting-bar" class="bar">
+                            <div id="character-settings">
+                                <div class="bar-text setting-title">Character Settings</div>
+                                <div id="character-setting-bar" class="bar">
+                                    <div class="input-container">
+                                        <div class="input-box">
+                                            <div class="input-name input-text input-content bar-text">
+                                                Current Level :
+                                            </div>
+                                            <input class="input-content input-number" type="number" min="1" max="79" id="char-start" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <div class="input-box">
+                                            <div class="input-name input-text input-content bar-text">
+                                                Desired Level :
+                                            </div>
+                                            <input class="input-content input-number" type="number" min="2" max="80" id="char-end" value="2">
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <div class="input-box">
+                                            <div class="input-name input-text input-content bar-text">
+                                                Talents :
+                                            </div>
+                                            <label class="switch input-content">
+                                                <input type="checkbox" id="talent" checked="true">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div id="weapon-settings">
+                                <div class="bar-text setting-title">Weapon Settings</div>
+                                <div id="character-setting-bar" class="bar">
+                                    <div class="input-container">
+                                        <div class="input-box">
+                                            <div class="input-name input-text input-content bar-text">
+                                                Current Level :
+                                            </div>
+                                            <input class="input-content input-number" type="number" min="1" max="79" id="weap-start" value="1">
+                                        </div>
+                                    </div>
+                                    <div class="input-container">
+                                        <div class="input-box">
+                                            <div class="input-name input-text input-content bar-text">
+                                                Desired Level :
+                                            </div>
+                                            <input class="input-content input-number" type="number" min="2" max="80" id="weap-end" value="2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="start-btn">
+                                <div id="btn-text">Calculate</div>
+                            </div>
                         </div>
                     </div>
                 </div>
