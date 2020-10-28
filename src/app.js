@@ -60,6 +60,28 @@ var toJson = (s) => {
 //toJson(j);
 //console.log(rules["temp"])
 
+var sortCards = () => {
+    let target = document.getElementById("popup-content");
+    let target2 = document.getElementById("popup-content").cloneNode(true);
+
+    let c = target2.getElementsByClassName("c");
+    let t = target2.getElementsByClassName("t");
+    let w = target2.getElementsByClassName("w");
+
+    clearCards();
+
+    //chars
+    for(let card = 0; card < c.length; card++) {
+        target.appendChild(c[card].cloneNode(true));
+    }
+    for(let card = 0; card < t.length; card++) {
+        target.appendChild(t[card].cloneNode(true));
+    }
+    for(let card = 0; card < w.length; card++) {
+        target.appendChild(w[card].cloneNode(true));
+    }
+}
+
 var clearCards = () => {
     document.querySelector("#popup-content").innerHTML = "";
 }
@@ -83,17 +105,6 @@ var forceAspectRatio = (img) => {
     //constraints  : width & height less than 100px
     let tw = img.naturalWidth;
     let th = img.naturalHeight;
-    //make sure image is loaded
-    let c = 0;
-    while(tw == 0 || th == 0) {
-        if(!img.src.includes("?t=")) img.src += "?t=";
-        img.src = img.src.split("?t=")[0] + "?t=" + c;
-        c++;
-
-        tw = img.naturalWidth;
-        th = img.naturalHeight;
-        if(c > 200) break;
-    }
 
     let imgAR = th / tw;
 
@@ -112,6 +123,7 @@ var forceAspectRatio = (img) => {
 }
 
 var createCard = (name, amount, type) => {
+    if(amount <= 0) return;
     let target = document.querySelector("#popup-content");
     let imgsrc = "/src/img/items/" + name + ".png";
     let res = 
@@ -203,6 +215,7 @@ window.onload = function() {
             }
             c++;
         });
+        sortCards();
     });
 
 
@@ -277,6 +290,9 @@ var forceInRange = () => {
     //wpend
     if(weapend.value > weapend.max) weapend.value = weapend.max;
     if(weapend.value < weapend.min) weapend.value = weapend.min;
+
+    if(charstart.value >= charend.value) charstart.value = charend.value - 1;
+    if(weapstart.value >= weapend.value) weapstart.value = weapend.value - 1;
 }
 
 var nameextract = name => {
