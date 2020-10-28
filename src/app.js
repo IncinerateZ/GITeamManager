@@ -1,5 +1,6 @@
 import calc from './calc.js';
 import rules from './rules.js';
+import materiallist from './materials.js';
 import wprarity from './wprarity.js';
 
 //xp to go to level N = levels[N] - levels[N-1]
@@ -59,6 +60,80 @@ var toJson = (s) => {
 //toJson(j);
 //console.log(rules["temp"])
 
+var clearCards = () => {
+    document.querySelector("#popup-content").innerHTML = "";
+}
+
+var getNewMargin = (width) => {
+    return (100 - width) / 2;
+}
+
+var preloadImage = () => {
+    for(let base in materiallist) {
+        for(let n in materiallist[base]) {
+            var img = new Image();
+            img.src = './src/img/items/' + materiallist[base][n] + ".png";
+        }
+    }
+}
+
+preloadImage();
+
+var forceAspectRatio = (img) => {
+    //constraints  : width & height less than 100px
+    let tw = img.naturalWidth;
+    let th = img.naturalHeight;
+    //make sure image is loaded
+    let c = 0;
+    while(tw == 0 || th == 0) {
+        console.log("E")
+        if(!img.src.includes("?t=")) img.src += "?t=";
+        img.src = img.src.split("?t=")[0] + "?t=" + c;
+        c++;
+
+        tw = img.naturalWidth;
+        th = img.naturalHeight;
+        if(c > 200) break;
+    }
+
+    let imgAR = th / tw;
+
+    while(tw > 100) {
+        tw *= 0.95;
+        th = imgAR * tw;
+    }
+    while(th > 100) {
+        th *= 0.95;
+        tw = th / imgAR;
+    }
+    img.style.width = tw + "px";
+    img.style.height = th + "px";
+    img.style.marginLeft = getNewMargin(tw) + "px";
+    img.style.marginTop = getNewMargin(th) + "px";
+}
+
+var createCard = (name, amount) => {
+    let target = document.querySelector("#popup-content");
+    let imgsrc = "/src/img/items/" + name + ".png";
+    let res = 
+    "<div class='item-card'>" +
+        "<div class='card-main'>" +
+            "<div class='img-box card-content'>" +
+                "<img src='" + imgsrc + "' id='i-" + name + "'>" +
+            "</div>" +
+        "</div>" +
+        "<div class='amt-box'>" +
+            "<div class='amt-text card-content'>" + currencyformat(amount) +
+            "</div>" +
+        "</div>" +
+    "</div>"
+    ;
+    target.innerHTML += res;
+
+    let img = document.querySelector("#i-" + name);
+    forceAspectRatio(img);
+}
+
 window.onload = function() {
     var characterlist = document.getElementsByClassName("character");
     var weapons = document.getElementById("weapon-bar");
@@ -100,8 +175,29 @@ window.onload = function() {
     weapend.addEventListener("keydown", (e) => forceNumFormat(e));
     startbtn.addEventListener("click", () => {
         forceInRange();
-        console.log(calc(charselected, charstart.value, charend.value, "char"));
-        console.log(calc(weapselected, weapstart.value, weapend.value, "wp"));
+        let res = [];
+        res.push(calc(charselected, charstart.value, charend.value, "char"));
+        res.push(calc(weapselected, weapstart.value, weapend.value, "wp"));
+        document.querySelector("#popup-container").style.visibility = "visible";
+
+
+        //clear prev cards
+        clearCards();
+        //create cards
+        res.forEach((list) => {
+            createCard("mora", list["mora"]);
+            let mats = list["mat"];
+            for(let i in mats["xpmats"]) {
+                createCard(i, mats["xpmats"][i]);
+            }
+            for(let i in mats) {
+                console.log(i)
+                if(i === "xpmats") continue;
+                createCard(i, mats[i]);
+            }
+        });
+
+        console.log(res)
     });
 
 
@@ -112,6 +208,8 @@ window.onload = function() {
             avatarselect(e.target);
         } else if (e.target.classList.contains("weap")) {
             weaponselect(e.target);
+        } else if (e.target.id === "popup-container") {
+            e.target.style.visibility = "hidden";
         }
     })
 }

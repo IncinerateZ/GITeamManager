@@ -61,7 +61,7 @@ const characters = {
     },
     "ningguang" : {
         "ascension" : "prithiva-topaz,basalt-pillar,glaze-lily,insignia-2",
-        "talents" : "propserity,spirit-locket-of-boreas,insignia-2"
+        "talents" : "prosperity,spirit-locket-of-boreas,insignia-2"
     },
     "noelle" : {
         "ascension" : "prithiva-topaz,basalt-pillar,valberry,mask",
@@ -69,7 +69,7 @@ const characters = {
     },
     "qiqi" : {
         "ascension" : "shivada-jade,hoarfrost-core,violetgrass,scroll",
-        "talents" : "propserity,tail-of-boreas,scroll"
+        "talents" : "prosperity,tail-of-boreas,scroll"
     },
     "razor" : {
         "ascension" : "vajrada-amethyst,lightning-prism,wolfhook,mask",

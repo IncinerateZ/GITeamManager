@@ -66,7 +66,8 @@ var calc = (name, start, end, type) => {
                             let a = (rules["talents"][t]["mcost"].split(","));
                             for(let i = 0; i < talmats.length; i++) {
                                 let m = talmats[i];
-                                if(parseInt(a[i].split("-")[0]) != 0) {
+                                if(m === "unknown" || parseInt(a[i].split("-")[0]) != 0) {
+                                    console.log(m)
                                     m = materiallist[m][parseInt(a[i].split("-")[0])];
                                 }
                                 if(mat[m] == undefined) mat[m] = 0;

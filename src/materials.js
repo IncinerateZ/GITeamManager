@@ -165,6 +165,9 @@ const materials = {
         "2" : "teachings-of-gold",
         "3" : "guide-to-gold",
         "4" : "philosophies-of-gold"
+    },
+    "unknown" : {
+        "0" : "unknown-weekly-material"
     }
 }
 
