@@ -11,7 +11,6 @@ const weapons = {
     "raven-bow" : "decarabian,horn,arrowhead",
     "recurve-bow" : "dandelion-gladiator,chaos,scroll",
     //"royal-bow" : "unknown,unknown,unknown",
-    "amos-bow" : "dandelion-gladiator,chaos,slime",
     "rust" : "guyun,knife,mask",
     "sacrificial-bow" : "boreal-wolfs,ley-line,slime",
     "seasoned-hunters-bow" : "boreal-wolfs,ley-line,insignia-1",
@@ -54,7 +53,8 @@ const weapons = {
     "sacrificial-greatsword" : "boreal-wolfs,ley-line,slime",
     "serpent-spine" : "aerosiderite,bone-shard,nectar",
     "skyrider-greatsword" : "aerosiderite,bone-shard,insignia-1",
-    "the-bell" : "boreal-wolfs,ley-line,slime",
+    "the-bell" : "decarabian,horn,nectar",
+    "waster-greatsword" : "boreal-wolfs,ley-line,slime",
     "white-iron-greatsword" : "dandelion-gladiator,chaos,slime",
     "whiteblind" : "guyun,knife,insignia-1",
     "wolfs-gravestone" : "dandelion-gladiator,chaos,scroll",
@@ -75,7 +75,8 @@ const weapons = {
     "white-tassel" : "guyun,knife,insignia-2",
     "aquila-favonia" : "decarabian,horn,arrowhead",
     //"blackcliff-longsword" : "unknown,unknown,unknown",
-    "cool-steel" : "guyun,knife,mask",
+    "cool-steel" : "decarabian,horn,arrowhead",
+    "dark-iron-sword" : "guyun,knife,mask",
     "dull-blade" : "decarabian,horn,arrowhead",
     "favonius-sword" : "decarabian,horn,arrowhead",
     "fillet-blade" : "elixir,mist-grass,insignia-1",
@@ -92,6 +93,7 @@ const weapons = {
     "the-black-sword" : "boreal-wolfs,ley-line,slime",
     "the-flute" : "boreal-wolfs,ley-line,slime",
     "travelers-handy-sword" : "dandelion-gladiator,chaos,scroll",
+    null : 0,
 };
 
 export default weapons;

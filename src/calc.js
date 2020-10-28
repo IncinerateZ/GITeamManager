@@ -1,7 +1,23 @@
 import characterlist from '../src/characters.js';
 import weaponlist from '../src/weapons.js'
+import wprarity from './wprarity.js';
 import materiallist from '../src/materials.js';
 import rules from '../src/rules.js';
+
+const cxpmat = [1000, 5000, 20000];
+const wxpmat = [400, 2000, 10000];
+
+const cmat = {
+    0 : "wanderers-advice",
+    1 : "adventurers-experience",
+    2 : "heros-wit"
+}
+
+const wmat = {
+    0 : "enhancement-ore",
+    1 : "fine-enhancement-ore",
+    2 : "mystic-enhancement-ore"
+}
 
 const lvlceils = ["20", "40", "50", "60", "70", "80"];
 const talentceils = {
@@ -23,8 +39,10 @@ var calc = (name, start, end, type) => {
         var ascmats = mats["ascension"].split(",");
         var talmats = mats["talents"].split(",");
         //get mora needed per level
-        let mora = xpcost(charexp(end, start));
+        let xp = charexp(end, start);
+        let mora = xpcost(xp);
         let mat = {}
+        greedyChar(mat, xp);
         for(let l = start; l < end; l++) {
             if(lvlceils.includes("" + l)) {
                 //calc mora needed per ascension
@@ -63,16 +81,19 @@ var calc = (name, start, end, type) => {
         res["mat"] = mat;
         return res;
     } else if (type === "wp") {
+        var rarity = wprarity[name];
         var mats = weaponlist[name].split(",");
         //get mora needed per level
-        let mora = xpcost2(wpexp(end, start));
+        let xp = wpexp(end, start, rarity)
+        let mora = xpcost2(xp);
         let mat = {}
+        greedyWeap(mat, xp);
         for(let l = start; l < end; l++) {
             if(lvlceils.includes("" + l)) {
                 //calc mora needed per ascension
-                mora = parseInt(mora) + parseInt(rules["weapons"][l]["mora"]);
+                mora = parseInt(mora) + parseInt(rules["weapons"][rarity][l]["mora"]);
                 //get items needed per ascension
-                let b = rules["weapons"][l]["mcost"].split(",");
+                let b = rules["weapons"][rarity][l]["mcost"].split(",");
                 for(let i = 0; i < mats.length; i++) {
                     let m = mats[i];
                     if(parseInt(b[i].split("-")[0]) != 0) {
@@ -85,16 +106,37 @@ var calc = (name, start, end, type) => {
         }
         res["mora"] = mora;
         res["mat"] = mat;
+        res["rarity"] = rarity;
         return res;
     }
 }
 
-var greedyChar = (xp) => {
-
+var greedyChar = (mat, xp) => {
+    let mats = {};
+    for(let i = cxpmat.length - 1; i >= 0; i--) {
+        while(xp >= cxpmat[i]) {
+            if(mats[cmat[i]] == undefined) mats[cmat[i]] = 0;
+            mats[cmat[i]] += 1;
+            xp -= cxpmat[i];
+        }
+    }
+    if(mats[cmat[0]] == undefined) mats[cmat[0]] = 0;
+    if(xp > 0) mats[cmat[0]] += 1;
+    mat["xpmats"] = mats;
 }
 
-var greedyWeap = (xp) => {
-
+var greedyWeap = (mat, xp) => {
+    let mats = {};
+    for(let i = wxpmat.length - 1; i >= 0; i--) {
+        while(xp >= wxpmat[i]) {
+            if(mats[wmat[i]] == undefined) mats[wmat[i]] = 0;
+            mats[wmat[i]] += 1;
+            xp -= wxpmat[i];
+        }
+    }
+    if(mats[wmat[0]] == undefined) mats[wmat[0]] = 0;
+    if(xp > 0) mats[wmat[0]] += 1;
+    mat["xpmats"] = mats;
 }
 
 //xp needed to go to from a to b inclusive
@@ -102,8 +144,8 @@ var charexp = (b, a) => {
     return rules["charlevels"][b] - rules["charlevels"][a];
 }
 
-var wpexp = (b, a) => {
-    return rules["wplevels"][b] - rules["wplevels"][a];
+var wpexp = (b, a, rarity) => {
+    return rules["wplevels"][rarity][b] - rules["wplevels"][rarity][a];
 }
 
 //mora needed for N char xp
