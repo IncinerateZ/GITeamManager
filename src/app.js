@@ -15,6 +15,15 @@ const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlis
 
 const wpmax = [70, 70, 90 - 10, 90 - 10, 90 - 10];
 
+var collapseToggle = false;
+var collapseText = {
+    false : "Collapse",
+    true : "Expand"
+}
+
+var uncollapsed;
+var collapsed;
+
 var startbtn;
 
 var charstart;
@@ -59,6 +68,27 @@ var toJson = (s) => {
 
 //toJson(j);
 //console.log(rules["temp"])
+
+var toggleCollapse = () => {
+    let target = document.getElementById("popup-content");
+    let target2 = target.cloneNode(true);
+
+    if(uncollapsed == target2) {
+        clearCards();
+        for(let i = 0; i < collapsed.length; i++) {
+            target.appendChild(collapsed[i].cloneNode(true));
+        }
+    } else {
+        uncollapsed = target2;
+        collapsed = [];
+        let map = {};
+        for(let i = 0; i < uncollapsed.childNodes.length; i++) {
+            if(map[uncollapsed.childNodes[i].id] == undefined) map[uncollapsed.childNodes[i].id] = 0;
+            map[uncollapsed.childNodes[i].id] += parseInt(uncollapsed.childNodes[i].querySelector(".amt-text").innerHTML);
+        }
+        console.log(map)
+    }
+}
 
 var sortCards = () => {
     let target = document.getElementById("popup-content");
@@ -127,7 +157,7 @@ var createCard = (name, amount, type) => {
     let target = document.querySelector("#popup-content");
     let imgsrc = "/src/img/items/" + name + ".png";
     let res = 
-    "<div class='item-card " + type + "'>" +
+    "<div class='item-card " + type + "' id='" + name + "'>" +
         "<div class='card-main tooltip'>" +
             "<div class='img-box'>" +
                 "<img src='" + imgsrc + "' id='i-" + name + "'>" +
@@ -228,6 +258,10 @@ window.onload = function() {
             weaponselect(e.target);
         } else if (e.target.id === "popup-container") {
             e.target.style.visibility = "hidden";
+        } else if (e.target.id === "collapse") {
+            collapseToggle = !collapseToggle;
+            e.target.innerHTML = collapseText[collapseToggle];
+            toggleCollapse();
         }
     })
 }
