@@ -229,6 +229,7 @@ input[type=number] {
     margin-right: 6px;
     float: left;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 3px;
 }
 
 #selector-container {
@@ -376,6 +377,7 @@ input[type=number] {
 #footer-text {
     display: flex;
     margin-top: 23px;
+    margin-left: 10px;
     float: left;
     font-family: 'Rubik', sans-serif;
     font-size: 15px;
