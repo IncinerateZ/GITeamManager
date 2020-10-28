@@ -34,11 +34,23 @@ body {
     margin: 10px;
     margin-right: 0px;
     width: 130px;
-    background-color: gray;
+    height: 136px;
     float: left;
     border-radius: 5px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.c {
+    background-color: #F6D55C;
+}
+
+.t {
+    background-color: #173F5F;
+}
+
+.w {
+    background-color: #ED553B;
 }
 
 .card-content {
@@ -49,6 +61,7 @@ body {
 }
 
 .img-box {
+    margin-left: 15px;
     margin-top: 10px;
     width: 100px;
     height: 100px;
@@ -188,18 +201,19 @@ input[type=number] {
 
 #popup {
     width: 874px;
-    height: 600px;
+    height: fit-content;
     margin: auto;
     margin-top: 50px;
-    background-color: rgb(10, 10, 10);
+    /*background-color: rgb(10, 10, 10);*/
     padding: 2px;
 }
 
 #popup-content {
     margin: 10px;
-    width: 850px;
-    height: 576px;
-    border: 2px solid white;
+    width: 860px;
+    height: 550px;
+    /*border: 2px solid white;*/
+    overflow-y: scroll;
 }
 
 #selector-container {
@@ -385,17 +399,17 @@ input[type=number] {
     width: 30px;
     height: 14px;
     transform: translateY(5px);
-  }
+}
   
   /* Hide default HTML checkbox */
-  .switch input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
   /* The slider */
-  .slider {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -405,9 +419,9 @@ input[type=number] {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
   
-  .slider:before {
+.slider:before {
     position: absolute;
     content: "";
     height: 12px;
@@ -417,27 +431,81 @@ input[type=number] {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
   
-  input:checked + .slider {
+input:checked + .slider {
     background-color: #2196F3;
-  }
+}
   
-  input:focus + .slider {
+input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     -webkit-transform: translateX(14px);
     -ms-transform: translateX(14px);
     transform: translateX(14px);
-  }
+}
   
   /* Rounded sliders */
-  .slider.round {
+.slider.round {
     border-radius: 10px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+  /* custom scrollbar implementation */
+  /* width */
+#popup-content::-webkit-scrollbar {
+    width: 4px;
+}
+  
+  /* Track */
+#popup-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+  /* Handle */
+#popup-content::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+  /* Handle on hover */
+#popup-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* tooltip implementation */
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
   }
   
-  .slider.round:before {
-    border-radius: 50%;
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(30, 30, 30);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    top: 50px;
+    left: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
   }

@@ -86,7 +86,6 @@ var forceAspectRatio = (img) => {
     //make sure image is loaded
     let c = 0;
     while(tw == 0 || th == 0) {
-        console.log("E")
         if(!img.src.includes("?t=")) img.src += "?t=";
         img.src = img.src.split("?t=")[0] + "?t=" + c;
         c++;
@@ -112,15 +111,16 @@ var forceAspectRatio = (img) => {
     img.style.marginTop = getNewMargin(th) + "px";
 }
 
-var createCard = (name, amount) => {
+var createCard = (name, amount, type) => {
     let target = document.querySelector("#popup-content");
     let imgsrc = "/src/img/items/" + name + ".png";
     let res = 
-    "<div class='item-card'>" +
-        "<div class='card-main'>" +
-            "<div class='img-box card-content'>" +
+    "<div class='item-card " + type + "'>" +
+        "<div class='card-main tooltip'>" +
+            "<div class='img-box'>" +
                 "<img src='" + imgsrc + "' id='i-" + name + "'>" +
             "</div>" +
+            "<span class='tooltiptext'>" + nameextract(name) + "</span>" +
         "</div>" +
         "<div class='amt-box'>" +
             "<div class='amt-text card-content'>" + currencyformat(amount) +
@@ -184,20 +184,25 @@ window.onload = function() {
         //clear prev cards
         clearCards();
         //create cards
+        let c = 0;
+        let type;
         res.forEach((list) => {
-            createCard("mora", list["mora"]);
+            if(c==0) type = "c";
+            if(c==1) type = "w"
+            createCard("mora", list["mora"], type);
+            if(list["mora2"] != undefined) createCard("mora", list["mora2"], "t");
             let mats = list["mat"];
             for(let i in mats["xpmats"]) {
-                createCard(i, mats["xpmats"][i]);
+                createCard(i, mats["xpmats"][i], type);
             }
             for(let i in mats) {
-                console.log(i)
                 if(i === "xpmats") continue;
-                createCard(i, mats[i]);
+                let type = i.substr(i.length - 1, i.length - 1);
+                let m = i.substr(0, i.length - 1);
+                createCard(m, mats[i], type);
             }
+            c++;
         });
-
-        console.log(res)
     });
 
 

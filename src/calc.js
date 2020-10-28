@@ -41,6 +41,7 @@ var calc = (name, start, end, type) => {
         //get mora needed per level
         let xp = charexp(end, start);
         let mora = xpcost(xp);
+        let mora2 = 0;
         let mat = {}
         greedyChar(mat, xp);
         for(let l = start; l < end; l++) {
@@ -54,24 +55,23 @@ var calc = (name, start, end, type) => {
                     if(parseInt(b[i].split("-")[0]) != 0) {
                         m = materiallist[m][parseInt(b[i].split("-")[0])];
                     }
-                    if(mat[m] == undefined) mat[m] = 0;
-                    mat[m] += parseInt(b[i].split("-")[1]);
+                    if(mat[m + "c"] == undefined) mat[m + "c"] = 0;
+                    mat[m + "c"] += parseInt(b[i].split("-")[1]);
                 }
                 //get mora needed per talent level * 3
                 if(document.querySelector("#talent").checked) {
                     if(talentceils["" + l] != null) {
                         talentceils["" + l].forEach(t => {
-                            mora = parseInt(mora) + (parseInt(rules["talents"][t]["mora"]) * 3);
+                            mora2 = parseInt(mora2) + (parseInt(rules["talents"][t]["mora"]) * 3);
                             //get items needed per talent level
                             let a = (rules["talents"][t]["mcost"].split(","));
                             for(let i = 0; i < talmats.length; i++) {
                                 let m = talmats[i];
                                 if(m === "unknown" || parseInt(a[i].split("-")[0]) != 0) {
-                                    console.log(m)
                                     m = materiallist[m][parseInt(a[i].split("-")[0])];
                                 }
-                                if(mat[m] == undefined) mat[m] = 0;
-                                mat[m] += (3 * parseInt(a[i].split("-")[1]));
+                                if(mat[m + "t"] == undefined) mat[m + "t"] = 0;
+                                mat[m + "t"] += (3 * parseInt(a[i].split("-")[1]));
                             }
                         })
                     }
@@ -79,6 +79,7 @@ var calc = (name, start, end, type) => {
             }
         }
         res["mora"] = mora;
+        res["mora2"] = mora2;
         res["mat"] = mat;
         return res;
     } else if (type === "wp") {
@@ -100,8 +101,8 @@ var calc = (name, start, end, type) => {
                     if(parseInt(b[i].split("-")[0]) != 0) {
                         m = materiallist[m][parseInt(b[i].split("-")[0])];
                     }
-                    if(mat[m] == undefined) mat[m] = 0;
-                    mat[m] += parseInt(b[i].split("-")[1]);
+                    if(mat[m + "w"] == undefined) mat[m + "w"] = 0;
+                    mat[m + "w"] += parseInt(b[i].split("-")[1]);
                 }
             }
         }
