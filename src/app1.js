@@ -10,6 +10,7 @@ analytics();
 //mora cost = 5xp per mora
 
 const faqtitles = {
+    0 : "Is There Mobile Support?",
     1 : "Where did you get the data?",
     2 : "Why is there no Traveler/MC?",
     3 : "Why is the ___ I am looking for not showing?",
@@ -17,6 +18,7 @@ const faqtitles = {
 }
 
 const faqanswers = {
+    0 : "Support for mobile devices are currently minimal",
     1 : "Data is taken and compiled largely from the official Genshin Impact wiki, otherwise they are based on leaks or other websites which are prone to inaccuracies and changes.",
     2 : "The Traveler is unique which will take some time to implement.",
     3 : "As per (1), data is taken largely from the official wiki, so if no data is available for a certain character or weapon they cannot be calculated.",
@@ -315,6 +317,8 @@ var showfaq = () => {
             target.innerHTML += 
             "<div id='faq-text'>" +
                 "<div id='faq-title'> FAQ </div>" +
+                "<div class='faq-t'>" + faqtitles[0] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[0] + "</div>" +
                 "<div class='faq-t'>" + faqtitles[1] + "</div>" +
                 "<div class='faq-p'>" + faqanswers[1] + "</div>" +
                 "<div class='faq-t'>" + faqtitles[2] + "</div>" +
