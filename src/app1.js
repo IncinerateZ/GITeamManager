@@ -6,6 +6,20 @@ import wprarity from './wprarity.js';
 //xp to go to level N = levels[N] - levels[N-1]
 //mora cost = 5xp per mora
 
+const faqtitles = {
+    1 : "Where did you get the data?",
+    2 : "Why is there no Traveler/MC?",
+    3 : "Why is the ___ I am looking for not showing?",
+    4 : "You are showing the wrong data!"
+}
+
+const faqanswers = {
+    1 : "Data is taken and compiled largely from the official Genshin Impact wiki, otherwise they are based on leaks or other websites which are prone to leaks and changes.",
+    2 : "The Traveler is unique which will take some time to implement.",
+    3 : "As (1), data is taken largely from the official wiki, so if no data is available for a certain character or weapon they cannot be calculated.",
+    4 : "Most of the data is manually typed in to the local database and ruleset which may cause some errors during entry, I try my best to fix all the errors. If you spot any mistakes or have a suggestion, feel free to DM me on Discord at IncinerateZ#4038."
+}
+
 const bowlist = ["alley-hunter", "amos-bow", "blackcliff-warbow", "compound-bow", /*"ebony-bow",*/ "favonius-warbow", "hunters-bow", "messenger", "prototype-crescent", "raven-bow", "recurve-bow", /*"royal-bow"*/, "rust", "sacrificial-bow", "seasoned-hunters-bow", "sharpshooters-oath", "skyward-harp", "slingshot", "the-stringless", "the-viridescent-hunt"];
 const catalystlist = [/*"amber-catalyst",*/ "apprentices-notes", /*"blackcliff-amulet",*/ "emerald-orb", "eye-of-perception", "favonius-codex", "lost-prayer-to-the-sacred-winds", "magic-guide", "mappa-mare", "otherworldly-story", "pocket-grimoire", "prototype-malice", "royal-grimoire", "sacrificial-fragments", "skyward-atlas", "solar-pearl", "the-widsith", "thrilling-tales-of-dragon-slayers", "twin-nephrite", "wine-and-song"];
 const greatswordlist = [/*"blackcliff-slasher",*/ "bloodtainted-greatsword", "debate-club", "favonius-greatsword", "ferrous-shadow", /*"lithic-blade"*/, "old-mercs-pal", "prototype-aminus", /*"quartz"*/, "rainslasher", "royal-greatsword", "sacrificial-greatsword", "serpent-spine", "skyrider-greatsword", "skyward-pride", "the-bell", "waster-greatsword", "white-iron-greatsword", "whiteblind", "wolfs-gravestone"];
@@ -191,6 +205,8 @@ var createCard = (name, amount, type) => {
 }
 
 window.onload = function() {
+    showfaq();
+    
     var characterlist = document.getElementsByClassName("character");
     var weapons = document.getElementById("weapon-bar");
     //load weapons
@@ -277,12 +293,35 @@ window.onload = function() {
             weaponselect(e.target);
         } else if (e.target.id === "popup-container") {
             e.target.style.visibility = "hidden";
+            clearCards();
         } else if (e.target.id === "collapse") {
             collapseToggle = !collapseToggle;
             e.target.innerHTML = collapseText[collapseToggle];
             toggleCollapse();
+        } else if (e.target.id === "faq") {
+            showfaq();
         }
     })
+}
+
+var showfaq = () => {
+    let popup = document.querySelector("#popup-container");
+            popup.style.visibility = "visible";
+            let target = document.querySelector("#popup-content");
+            
+            target.innerHTML += 
+            "<div id='faq-text'>" +
+                "<div id='faq-title'> FAQ </div>" +
+                "<div class='faq-t'>" + faqtitles[1] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[1] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[2] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[2] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[3] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[3] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[4] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[4] + "</div>" +
+            "</div>"
+            ;
 }
 
 var avatarselect = charicon => {

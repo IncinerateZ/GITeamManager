@@ -198,6 +198,26 @@ input[type=number] {
     height: 50px;
 }
 
+#faq-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.faq-t {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.faq-p {
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
 #popup-container {
     transform: translateY(-51px);
     position: fixed;
@@ -241,7 +261,7 @@ input[type=number] {
     margin-bottom: 3px;
 }
 
-#collapse {
+.txt-btn {
     float: right;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -249,9 +269,28 @@ input[type=number] {
     user-select: none; /* Standard */
 }
 
-#collapse:hover {
+.txt-btn:hover {
     cursor: pointer;
     color: silver;
+}
+
+.foot-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.foot-btn:hover {
+    cursor: pointer;
+    color: white;
 }
 
 #selector-container {
