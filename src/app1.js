@@ -266,24 +266,26 @@ window.onload = function() {
         //clear prev cards
         clearCards();
         //create cards
-        let c = 0;
+        let c;
         let type;
         res.forEach((list) => {
-            if(c==0) type = "c";
-            if(c==1) type = "w"
-            createCard("mora", list["mora"], type);
-            if(list["mora2"] != undefined) createCard("mora", list["mora2"], "t");
-            let mats = list["mat"];
-            for(let i in mats["xpmats"]) {
-                createCard(i, mats["xpmats"][i], type);
+            if(list != null) {
+                c = list["type"];
+                if(c==0) type = "c";
+                if(c==1) type = "w"
+                createCard("mora", list["mora"], type);
+                if(list["mora2"] != undefined) createCard("mora", list["mora2"], "t");
+                let mats = list["mat"];
+                for(let i in mats["xpmats"]) {
+                    createCard(i, mats["xpmats"][i], type);
+                }
+                for(let i in mats) {
+                    if(i === "xpmats") continue;
+                    let type = i.substr(i.length - 1, i.length - 1);
+                    let m = i.substr(0, i.length - 1);
+                    createCard(m, mats[i], type);
+                }
             }
-            for(let i in mats) {
-                if(i === "xpmats") continue;
-                let type = i.substr(i.length - 1, i.length - 1);
-                let m = i.substr(0, i.length - 1);
-                createCard(m, mats[i], type);
-            }
-            c++;
         });
         sortCards();
     });

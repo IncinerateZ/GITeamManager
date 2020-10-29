@@ -81,6 +81,7 @@ var calc = (name, start, end, type) => {
         res["mora"] = mora;
         res["mora2"] = mora2;
         res["mat"] = mat;
+        res["type"] = 0;
         return res;
     } else if (type === "wp") {
         var rarity = wprarity[name];
@@ -109,6 +110,7 @@ var calc = (name, start, end, type) => {
         res["mora"] = mora;
         res["mat"] = mat;
         res["rarity"] = rarity;
+        res["type"] = 1;
         return res;
     }
 }
