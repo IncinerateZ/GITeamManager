@@ -1,5 +1,6 @@
 var a = async () => {
-  const res = await fetch('https://api.incin.tech/analytics', {
+  let origin = window.location.hostname;
+  const res = await fetch('https://api.incin.tech/analytics?o=' + origin, {
     method: 'GET',
     mode: 'cors',
   });
