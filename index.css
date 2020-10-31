@@ -139,7 +139,7 @@ img {
 
 .input-box {
     width: fit-content;
-    height: 100%;
+    height: fit-content;
     margin: auto;
 }
 
@@ -315,6 +315,11 @@ input[type=number] {
     height: 486px;
 }
 
+#weapon-setting-title {
+    width: 200px;
+    margin: auto;
+}
+
 #weapon-bar {
     width: 542px;
     height: 488px;
@@ -331,10 +336,31 @@ input[type=number] {
 }
 
 #character-setting-bar {
-    width: 200px;
+    width: 220px;
     height: fit-content;
     margin: auto;
     border: 2px solid rgb(252, 250, 255);
+}
+
+#talent-box {
+    width: fit-content;
+    height: fit-content;
+    margin: none;
+}
+
+#talent-switch-container {
+    margin-left: 42px;
+    width: fit-content;
+    height: 20px;
+}
+
+.talent-settings {
+    height: fit-content;
+}
+
+#talent-setting-bar {
+    margin: 0px;
+    height: 60px;
 }
 
 #setting-bar-container {
@@ -342,7 +368,7 @@ input[type=number] {
 
 #setting-bar {
     width: 300px;
-    height: 300px;
+    height: fit-content;
 }
 
 #user-profile {
@@ -590,4 +616,8 @@ input:checked + .slider:before {
     text-align: center;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+  }
+  
+  #talent:checked ~ #character-setting-bar{
+    background-color: white;
   }

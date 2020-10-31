@@ -164,6 +164,16 @@ var preloadImage = () => {
 
 preloadImage();
 
+var toggleTalents = (checked) => {
+    if(checked) {
+        var target = document.querySelector("#talent-setting-bar");
+        return;
+    } else {
+        var target = document.querySelector("#talent-setting-bar");
+        return;
+    }
+}
+
 var forceAspectRatio = (img) => {
     //constraints  : width & height less than 100px
     let tw = img.naturalWidth;
@@ -307,6 +317,8 @@ window.onload = function() {
             toggleCollapse();
         } else if (e.target.id === "faq") {
             showfaq();
+        } else if (e.target.id === "talent") {
+            toggleTalents(e.target.checked);
         }
     })
 }

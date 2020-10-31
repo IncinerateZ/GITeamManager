@@ -44,6 +44,8 @@
                         <div class="tbc">Talent Materials</div>
                         <div class="smallbox w tbc"></div>
                         <div class="tbc">Weapon Materials</div>
+                        <div class="smallbox o tbc"></div>
+                        <div class="tbc">Mixed Materials</div>
                     </div>
                     <div id="filter-methods">
                         <div class="method tbc txt-btn" id="collapse">Collapse</div>
@@ -120,22 +122,24 @@
                                             <input class="input-content input-number" type="number" min="2" max="80" id="char-end" value="2">
                                         </div>
                                     </div>
-                                    <div class="input-container">
-                                        <div class="input-box">
-                                            <div class="input-name input-text input-content bar-text">
-                                                Talents :
+                                    <div class="input-container talent-settings">
+                                        <div id="talent-box">
+                                            <div id="talent-switch-container">
+                                                <div class="input-name input-text input-content bar-text">
+                                                    Talents :
+                                                </div>
+                                                <label class="switch input-content">
+                                                    <input type="checkbox" id="talent" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
                                             </div>
-                                            <label class="switch input-content">
-                                                <input type="checkbox" id="talent" checked>
-                                                <span class="slider round"></span>
-                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div id="weapon-settings">
-                                <div class="bar-text setting-title">Weapon Settings</div>
+                                <div class="bar-text setting-title" id="weapon-setting-title">Weapon Settings</div>
                                 <div id="character-setting-bar" class="bar">
                                     <div class="input-container">
                                         <div class="input-box">
