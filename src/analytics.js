@@ -5,6 +5,7 @@ var a = async () => {
     mode: 'cors',
   });
   const j = await res.json();
+  console.log(j);
 }
 
 export default a;
