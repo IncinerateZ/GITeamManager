@@ -498,6 +498,22 @@ input[type=number] {
     #footer {
         margin-top: 50px;
     }
+    #popup {
+        width: 400px;
+    }
+    #popup-content {
+        width: 440px;
+        transform: translateX(-30px);
+    }
+    #popup-content-toolbar {
+        width: 480px;
+        padding-bottom: 30px;
+        transform: translateX(-30px);
+    }
+    .method {
+        transform: translateX(-220px);
+        margin-top: 5px;
+    }
 }
 
 /* toggle switch implementation */
