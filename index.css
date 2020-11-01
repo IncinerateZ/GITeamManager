@@ -514,6 +514,18 @@ input[type=number] {
         transform: translateX(-220px);
         margin-top: 5px;
     }
+    #character-selector-title {
+        transform: translateX(188px);
+    }
+    #character-bar {
+        transform: translateX(188px);
+    }
+    #char-name {
+        transform: translateX(188px);
+    }
+    #setting-bar-container {
+        transform: translateX(130px);
+    }
 }
 
 /* toggle switch implementation */
