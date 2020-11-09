@@ -25,6 +25,30 @@ const faqanswers = {
     4 : "Most of the data is manually typed in to the local database and ruleset which may cause some errors during entry, I try my best to fix all the errors. If you spot any mistakes or have a suggestion, feel free to DM me on Discord at IncinerateZ#4038."
 }
 
+var showfaq = () => {
+    let popup = document.querySelector("#popup-container");
+            popup.style.visibility = "visible";
+            let target = document.querySelector("#popup-content");
+            
+            target.innerHTML += 
+            "<div id='faq-text'>" +
+                "<div id='faq-title'> FAQ </div>" +
+                "<div class='faq-t'>" + faqtitles[0] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[0] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[1] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[1] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[2] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[2] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[3] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[3] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[4] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[4] + "</div>" +
+            "</div>"
+            ;
+}
+
+showfaq();
+
 const bowlist = ["alley-hunter", "amos-bow", "blackcliff-warbow", "compound-bow", /*"ebony-bow",*/ "favonius-warbow", "hunters-bow", "messenger", "prototype-crescent", "raven-bow", "recurve-bow", /*"royal-bow"*/, "rust", "sacrificial-bow", "seasoned-hunters-bow", "sharpshooters-oath", "skyward-harp", "slingshot", "the-stringless", "the-viridescent-hunt"];
 const catalystlist = [/*"amber-catalyst",*/ "apprentices-notes", /*"blackcliff-amulet",*/ "emerald-orb", "eye-of-perception", "favonius-codex", "lost-prayer-to-the-sacred-winds", "magic-guide", "mappa-mare", "otherworldly-story", "pocket-grimoire", "prototype-malice", "royal-grimoire", "sacrificial-fragments", "skyward-atlas", "solar-pearl", "the-widsith", "thrilling-tales-of-dragon-slayers", "twin-nephrite", "wine-and-song"];
 const greatswordlist = [/*"blackcliff-slasher",*/ "bloodtainted-greatsword", "debate-club", "favonius-greatsword", "ferrous-shadow", /*"lithic-blade"*/, "old-mercs-pal", "prototype-aminus", /*"quartz"*/, "rainslasher", "royal-greatsword", "sacrificial-greatsword", "serpent-spine", "skyrider-greatsword", "skyward-pride", "the-bell", "waster-greatsword", "white-iron-greatsword", "whiteblind", "wolfs-gravestone"];
@@ -321,28 +345,6 @@ window.onload = function() {
             toggleTalents(e.target.checked);
         }
     })
-}
-
-var showfaq = () => {
-    let popup = document.querySelector("#popup-container");
-            popup.style.visibility = "visible";
-            let target = document.querySelector("#popup-content");
-            
-            target.innerHTML += 
-            "<div id='faq-text'>" +
-                "<div id='faq-title'> FAQ </div>" +
-                "<div class='faq-t'>" + faqtitles[0] + "</div>" +
-                "<div class='faq-p'>" + faqanswers[0] + "</div>" +
-                "<div class='faq-t'>" + faqtitles[1] + "</div>" +
-                "<div class='faq-p'>" + faqanswers[1] + "</div>" +
-                "<div class='faq-t'>" + faqtitles[2] + "</div>" +
-                "<div class='faq-p'>" + faqanswers[2] + "</div>" +
-                "<div class='faq-t'>" + faqtitles[3] + "</div>" +
-                "<div class='faq-p'>" + faqanswers[3] + "</div>" +
-                "<div class='faq-t'>" + faqtitles[4] + "</div>" +
-                "<div class='faq-p'>" + faqanswers[4] + "</div>" +
-            "</div>"
-            ;
 }
 
 var avatarselect = charicon => {
