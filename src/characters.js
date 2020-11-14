@@ -17,7 +17,7 @@ const characters = {
     },
     "childe" : {
         "ascension" : "varunada-lazurite,cleansing-heart,starconch,insignia-2",
-        "talents" : "freedom,unknown,insignia-2"
+        "talents" : "freedom,shard-of-a-foul-legacy,insignia-2"
     },
     "chongyun" : {
         "ascension" : "shivada-jade,hoarfrost-core,cor-lapis,mask",
@@ -29,7 +29,7 @@ const characters = {
     },
     "diona" : {
         "ascension" : "shivada-jade,hoarfrost-core,calla-lily,arrowhead",
-        "talents" : "freedom,unknown,arrowhead"
+        "talents" : "freedom,shard-of-a-foul-legacy,arrowhead"
     },
     "fischl" : {
         "ascension" : "vajrada-amethyst,lightning-prism,small-lamp-grass,arrowhead",

@@ -244,7 +244,6 @@ var createCard = (name, amount, type) => {
 }
 
 window.onload = function() {
-    showfaq();
     
     var characterlist = document.getElementsByClassName("character");
     var weapons = document.getElementById("weapon-bar");

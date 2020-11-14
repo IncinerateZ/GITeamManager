@@ -19,12 +19,15 @@ const wmat = {
     2 : "mystic-enhancement-ore"
 }
 
-const lvlceils = ["20", "40", "50", "60", "70", "80"];
+//next cap per ascenscion
+const lvlceils = ["20", "40", "50", "60", "70", "80", "90"];
+//ascenscion lvl cap : talent lvls[]
 const talentceils = {
     "40" : [2],
     "50" : [3, 4],
     "60" : [5, 6],
-    "70" : [7, 8]
+    "70" : [7, 8],
+    "80" : [9, 10]
 }
 
 //assume start is not ascended, asume end level will not ascend
@@ -72,6 +75,9 @@ var calc = (name, start, end, type) => {
                                 }
                                 if(mat[m + "t"] == undefined) mat[m + "t"] = 0;
                                 mat[m + "t"] += (3 * parseInt(a[i].split("-")[1]));
+                            }
+                            if(a.length == 4) {
+                                mat["crown-of-insightt"] = 1;
                             }
                         })
                     }
