@@ -77,7 +77,7 @@ var calc = (name, start, end, type) => {
                                 mat[m + "t"] += (3 * parseInt(a[i].split("-")[1]));
                             }
                             if(a.length == 4) {
-                                mat["crown-of-insightt"] = 1;
+                                mat["crown-of-sagehoodt"] = 1;
                             }
                         })
                     }
