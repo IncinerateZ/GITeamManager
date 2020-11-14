@@ -28,6 +28,7 @@ const weapons = {
     "lost-prayer-to-the-sacred-winds" : "dandelion-gladiator,chaos,slime",
     "magic-guide" : "decarabian,horn,slime",
     "mappa-mare" : "aerosiderite,bone-shard,slime",
+    "memory-of-dust" : "aerosiderite,bone-shard,mask",
     "otherworldy-story" : "dandelion-gladiator,chaos,slime",
     "pocket-grimoire" : "decarabian,horn,mask",
     "prototype-malice" : "elixir,mist-grass,arrowhead",

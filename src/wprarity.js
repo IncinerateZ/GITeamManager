@@ -28,6 +28,7 @@ const wprarity = {
     "lost-prayer-to-the-sacred-winds" : 5,
     "magic-guide" : 3,
     "mappa-mare" : 4,
+    "memory-of-dust" : 5,
     "otherworldy-story" : 3,
     "pocket-grimoire" : 2,
     "prototype-malice" : 4,
