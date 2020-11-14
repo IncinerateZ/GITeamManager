@@ -1,7 +1,7 @@
 const characters = {
     "amber" : {
         "ascension" : "agnidus-agate,everflame-seed,small-lamp-grass,arrowhead",
-        "talents" : "freedom,unknown,arrowhead"
+        "talents" : "freedom,dvalins-sigh,arrowhead"
     },
     "barbara" : {
         "ascension" : "varunada-lazurite,cleansing-heart,philanemo-mushroom,scroll",
@@ -13,7 +13,7 @@ const characters = {
     },
     "bennett" : {
         "ascension" : "agnidus-agate,everflame-seed,windwheel-aster,insignia-1",
-        "talents" : "resistance,unknown,insignia-1"
+        "talents" : "resistance,dvalins-plume,insignia-1"
     },
     "childe" : {
         "ascension" : "varunada-lazurite,cleansing-heart,starconch,insignia-2",
@@ -53,7 +53,7 @@ const characters = {
     },
     "lisa" : {
         "ascension" : "vajrada-amethyst,lightning-prism,valberry,slime",
-        "talents" : "ballad,unknown,slime"
+        "talents" : "ballad,dvalins-claw,slime"
     },
     "mona" : {
         "ascension" : "varunada-lazurite,cleansing-heart,philanemo-mushroom,nectar",
@@ -65,7 +65,7 @@ const characters = {
     },
     "noelle" : {
         "ascension" : "prithiva-topaz,basalt-pillar,valberry,mask",
-        "talents" : "resistance,unknown,mask"
+        "talents" : "resistance,dvalins-claw,mask"
     },
     "qiqi" : {
         "ascension" : "shivada-jade,hoarfrost-core,violetgrass,scroll",
@@ -77,7 +77,7 @@ const characters = {
     },
     "sucrose" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,windwheel-aster,nectar",
-        "talents" : "freedom,unknown,nectar"
+        "talents" : "freedom,spirit-locket-of-boreas,nectar"
     },
     "venti" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,cecilia,slime",
@@ -93,7 +93,7 @@ const characters = {
     },
     "xingqiu" : {
         "ascension" : "shivada-jade,cleansing-heart,silk-flower,mask",
-        "talents" : "gold,unknown,mask"
+        "talents" : "gold,tail-of-boreas,mask"
     },
     "xinyan" : {
         "ascension" : "agnidus-agate,everflame-seed,violetgrass,insignia-1",
