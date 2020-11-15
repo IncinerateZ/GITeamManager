@@ -395,7 +395,6 @@ var forceInRange = () => {
     if(charstart.value > charstart.max) charstart.value = charstart.max;
     if(charstart.value < charstart.min) charstart.value = charstart.min;
     //charend
-    //charstart
     if(charend.value > charend.max) charend.value = charend.max;
     if(charend.value < charend.min) charend.value = charend.min;
     //wpstart
@@ -439,6 +438,6 @@ var currencyformat = amount => {
 }
 
 var changeConstraints = (rarity) => {
-    let max = wpmax[rarity];
+    let max = wpmax[rarity - 1];
     weapend.max = max;
 }
