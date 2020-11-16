@@ -101,7 +101,7 @@ const characters = {
     },
     "zhongli" : {
         "ascension" : "prithiva-topaz,basalt-pillar,cor-lapis,slime",
-        "talents" : "gold,unknown,slime"
+        "talents" : "gold,tusk-of-monoceros-caeli,slime"
     }
 };
 
