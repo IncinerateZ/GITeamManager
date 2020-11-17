@@ -198,29 +198,51 @@ var toggleTalents = (checked) => {
     }
 }
 
-var forceAspectRatio = (img) => {
+var resizeImg = (img, w, h) => {
+    let parent = img.parentNode;
+    let src = img.src;
+    let id = img.id;
+    let mw = getNewMargin(w) + "px";
+    let mh = getNewMargin(h) + "px";
+    parent.innerHTML = "<img src='" + src + "' id='" + id + "' style='width: " + w + "px; height:" + h + "px; margin-left: " + mw + "px; margin-top: " + mh + "px;'"+ ">";
+    console.log("RESIZE")
+}
+
+var forceAspectRatio = (img, type) => {
     //constraints  : width & height less than 100px
-    let tw = img.naturalWidth;
-    let th = img.naturalHeight;
+    let tw = 0;
+    let th = 0;
+    img.onload = (e) => {
+        tw = img.naturalWidth;
+        th = img.naturalHeight;
 
-    let imgAR = th / tw;
+        let imgAR = th / tw;
 
-    while(tw > 100) {
-        tw *= 0.95;
-        th = imgAR * tw;
+        while(tw > 100) {
+            tw *= 0.95;
+            th = imgAR * tw;
+        }
+        while(th > 100) {
+            th *= 0.95;
+            tw = th / imgAR;
+        }
+        /*if(tw == 0 || th == 0) {
+            tw = 90;
+            th = 90;
+        }*/
+        let tmp = document.getElementsByClassName(type);
+        for(let i = 0; i < tmp.length; i++) {
+            if(tmp[i].id === img.id.substring(2)) {
+                img = tmp[i].childNodes[0].firstChild.firstChild;
+                break;
+            }
+        }
+
+        img.style.width = tw + "px";
+        img.style.height = th + "px";
+        img.style.marginLeft = getNewMargin(tw) + "px";
+        img.style.marginTop = getNewMargin(th) + "px";
     }
-    while(th > 100) {
-        th *= 0.95;
-        tw = th / imgAR;
-    }
-    if(tw == 0 || th == 0) {
-        tw = 90;
-        th = 90;
-    }
-    img.style.width = tw + "px";
-    img.style.height = th + "px";
-    img.style.marginLeft = getNewMargin(tw) + "px";
-    img.style.marginTop = getNewMargin(th) + "px";
 }
 
 var createCard = (name, amount, type) => {
@@ -244,7 +266,7 @@ var createCard = (name, amount, type) => {
     target.innerHTML += res;
 
     let img = document.querySelector("#i-" + name);
-    forceAspectRatio(img);
+    forceAspectRatio(img, type);
 }
 
 window.onload = function() {
