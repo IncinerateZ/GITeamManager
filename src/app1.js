@@ -213,6 +213,10 @@ var forceAspectRatio = (img) => {
         th *= 0.95;
         tw = th / imgAR;
     }
+    if(tw == 0 || th == 0) {
+        tw = 90;
+        th = 90;
+    }
     img.style.width = tw + "px";
     img.style.height = th + "px";
     img.style.marginLeft = getNewMargin(tw) + "px";
@@ -321,14 +325,6 @@ window.onload = function() {
         sortCards();
 
         document.querySelector("#popup-container").style.visibility = "visible";
-        setTimeout(function() {
-            collapseToggle = !collapseToggle;
-            document.querySelector("#collapse").innerHTML = collapseText[collapseToggle];
-            toggleCollapse();
-        }, 100)
-        collapseToggle = !collapseToggle;
-        document.querySelector("#collapse").innerHTML = collapseText[collapseToggle];
-        toggleCollapse();
     });
 
 
