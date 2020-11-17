@@ -293,8 +293,6 @@ window.onload = function() {
         let res = [];
         res.push(calc(charselected, charstart.value, charend.value, "char"));
         res.push(calc(weapselected, weapstart.value, weapend.value, "wp"));
-        document.querySelector("#popup-container").style.visibility = "visible";
-
 
         //clear prev cards
         clearCards();
@@ -321,6 +319,16 @@ window.onload = function() {
             }
         });
         sortCards();
+
+        document.querySelector("#popup-container").style.visibility = "visible";
+        setTimeout(function() {
+            collapseToggle = !collapseToggle;
+            document.querySelector("#collapse").innerHTML = collapseText[collapseToggle];
+            toggleCollapse();
+        }, 100)
+        collapseToggle = !collapseToggle;
+        document.querySelector("#collapse").innerHTML = collapseText[collapseToggle];
+        toggleCollapse();
     });
 
 
