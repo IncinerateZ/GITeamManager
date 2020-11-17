@@ -238,10 +238,16 @@ var forceAspectRatio = (img, type) => {
             }
         }
 
+        if(th < 97) {
+            img.parentNode.parentNode.parentNode.lastChild.style.position = "relative";
+            //img.parentNode.parentNode.parentNode.lastChild.style.bottom = (th - 97)/10 + "px";
+        }
+
         img.style.width = tw + "px";
         img.style.height = th + "px";
         img.style.marginLeft = getNewMargin(tw) + "px";
-        img.style.marginTop = getNewMargin(th) + "px";
+        img.style.marginTop = getNewMargin(th) * 2 + "px";
+        img.style.transform = "translateY(-4px)";
     }
 }
 
