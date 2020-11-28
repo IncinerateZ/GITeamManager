@@ -310,7 +310,8 @@ input[type=number] {
 
 #character-bar {
     width: 164px;
-    height: 486px;
+    height: 435px;
+    /*height: 486px;*/
 }
 
 #weapon-setting-title {
