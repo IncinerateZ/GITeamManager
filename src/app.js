@@ -1,1 +1,475 @@
-const _0x32d3=['You\x20are\x20showing\x20the\x20wrong\x20data!','serpent-spine','checked','<img\x20src=\x27','appendChild','mora2','2px\x20solid\x20gold','naturalWidth','reverse','RESIZE','wine-and-song','marginTop','amos-bow','getElementsByClassName','#char-check','Collapse','eye-of-perception','prototype-malice','firstChild','.amt-text','amber','Alley\x20Hunter','replace','weapon-name','px;\x20margin-left:\x20','skyrider-greatsword','#popup-content','crescent-pike','min','px;\x20height:','forEach','alley-hunter','#start-btn','</div>','innerHTML','iron-point','./src/img/items/','join','skyward-spine','harbinger-of-dawn','skyward-harp','contains','compound-bow','aquila-favonia','childNodes','height','px;\x27','border','floor','<div\x20class=\x27img-box\x27>','emerald-orb','px;\x20margin-top:\x20','width','transform','src','prototype-crescent','solar-pearl','relative','</span>','<div\x20class=\x27icon\x20weapons\x27\x20id=\x27','\x27\x20id=\x27','visibility','#weap-start','click','blackcliff-warbow','\x27\x20src=\x27src/img/weapons/','the-flute','faq','<span\x20class=\x27tooltiptext\x27>','max','prototype-grudge','raven-bow','dark-iron-sword','royal-greatsword','pocket-grimoire','char-name','travelers-handy-sword','black-tassel','mora','xpmats','dull-blade','\x27\x20src=\x27src/img/characters/gi-','type','translateY(-4px)','substring','cloneNode','fillet-blade','skyrider-sword','Data\x20is\x20taken\x20and\x20compiled\x20largely\x20from\x20the\x20official\x20Genshin\x20Impact\x20wiki,\x20otherwise\x20they\x20are\x20based\x20on\x20unofficial\x20sources\x20which\x20are\x20prone\x20to\x20inaccuracies\x20and\x20changes.','apprentices-notes','parentNode','toUpperCase','rainslasher','\x20:\x20','#char-start','charAt','hunters-bow','primordial-jade-winged-spear','onload','hidden','\x27\x20id=\x27i-','prototype-aminus','target','sacrificial-greatsword','getElementById','<div\x20class=\x27faq-t\x27>','#talent','<img\x20class=\x27avatar\x20char\x27\x20id=\x27i-','None','favonius-codex','otherworldly-story','As\x20per\x20(1),\x20data\x20is\x20taken\x20largely\x20from\x20the\x20official\x20wiki,\x20so\x20if\x20no\x20data\x20is\x20available\x20for\x20a\x20certain\x20character\x20or\x20weapon\x20they\x20cannot\x20be\x20calculated.','push','lost-prayer-to-the-sacred-winds','slice','.png\x27>','substr','lions-roar','#popup-container','seasoned-hunters-bow','the-bell','favonius-sword','wolfs-gravestone','Why\x20is\x20the\x20___\x20I\x20am\x20looking\x20for\x20not\x20showing?','thrilling-tales-of-dragon-slayers','memory-of-dust','marginLeft','<div\x20class=\x27amt-box\x27>','split','the-viridescent-hunt','cool-steel','.png','#collapse','favonius-warbow','sacrificial-bow','\x27><img\x20class=\x27avatar\x20weap\x27\x20id=\x27i-','<div\x20class=\x27faq-p\x27>','bloodtainted-greatsword','halberd','<div\x20class=\x27item-card\x20','addEventListener','slingshot','white-iron-greatsword','#weap-end','sharpshooters-oath','dragons-bane','char','sacrificial-fragments','whiteblind','weapon-bar','position','<div\x20id=\x27faq-title\x27>\x20FAQ\x20</div>','log','the-stringless','classList','#talent-setting-bar','includes','deathmatch','value','old-mercs-pal','popup-container','iron-sting','waster-greatsword','talent','royal-grimoire','weap','querySelector','length','popup-content','keydown','<div\x20class=\x27amt-text\x20card-content\x27>','Most\x20of\x20the\x20data\x20is\x20manually\x20typed\x20in\x20to\x20the\x20local\x20database\x20and\x20ruleset\x20which\x20may\x20cause\x20some\x20errors\x20during\x20entry,\x20I\x20try\x20my\x20best\x20to\x20fix\x20all\x20the\x20errors.\x20If\x20you\x20spot\x20any\x20mistakes\x20or\x20have\x20a\x20suggestion,\x20feel\x20free\x20to\x20DM\x20me\x20on\x20Discord\x20at\x20IncinerateZ#4038.','rust','Support\x20for\x20mobile\x20devices\x20are\x20currently\x20minimal','Why\x20is\x20there\x20no\x20Traveler/MC?','.png\x27></div>','character','skyward-pride','style','lastChild'];(function(_0x3bc2a7,_0x78c1c1){const _0x32d300=function(_0x31bb4e){while(--_0x31bb4e){_0x3bc2a7['push'](_0x3bc2a7['shift']());}};_0x32d300(++_0x78c1c1);}(_0x32d3,0x161));const _0x31bb=function(_0x3bc2a7,_0x78c1c1){_0x3bc2a7=_0x3bc2a7-0x1aa;let _0x32d300=_0x32d3[_0x3bc2a7];return _0x32d300;};const _0x39d098=_0x31bb;import _0x1436f1 from'./calc.js';import _0x3b26c8 from'./rules.js';import _0x480bb7 from'./materials.js';import _0x4e6502 from'./wprarity.js';import _0xe0b496 from'./analytics.js';_0xe0b496();const faqtitles={0x0:'Is\x20There\x20Mobile\x20Support?',0x1:'Where\x20did\x20you\x20get\x20the\x20data?',0x2:_0x39d098(0x1ab),0x3:_0x39d098(0x22c),0x4:_0x39d098(0x1b1)},faqanswers={0x0:_0x39d098(0x1aa),0x1:_0x39d098(0x209),0x2:'The\x20Traveler\x20is\x20unique\x20which\x20will\x20take\x20some\x20time\x20to\x20implement.',0x3:_0x39d098(0x220),0x4:_0x39d098(0x25c)};var showfaq=()=>{const _0x437ce2=_0x39d098;let _0x25bea8=document['querySelector'](_0x437ce2(0x227));_0x25bea8[_0x437ce2(0x1af)]['visibility']='visible';let _0x2742b2=document['querySelector'](_0x437ce2(0x1cb));_0x2742b2[_0x437ce2(0x1d3)]+='<div\x20id=\x27faq-text\x27>'+_0x437ce2(0x248)+_0x437ce2(0x21a)+faqtitles[0x0]+'</div>'+_0x437ce2(0x239)+faqanswers[0x0]+'</div>'+_0x437ce2(0x21a)+faqtitles[0x1]+_0x437ce2(0x1d2)+_0x437ce2(0x239)+faqanswers[0x1]+'</div>'+_0x437ce2(0x21a)+faqtitles[0x2]+_0x437ce2(0x1d2)+'<div\x20class=\x27faq-p\x27>'+faqanswers[0x2]+_0x437ce2(0x1d2)+_0x437ce2(0x21a)+faqtitles[0x3]+_0x437ce2(0x1d2)+_0x437ce2(0x239)+faqanswers[0x3]+'</div>'+_0x437ce2(0x21a)+faqtitles[0x4]+_0x437ce2(0x1d2)+_0x437ce2(0x239)+faqanswers[0x4]+_0x437ce2(0x1d2)+_0x437ce2(0x1d2);};showfaq();const bowlist=[_0x39d098(0x1d0),_0x39d098(0x1bd),_0x39d098(0x1f1),_0x39d098(0x1db),_0x39d098(0x236),_0x39d098(0x211),'messenger',_0x39d098(0x1e8),_0x39d098(0x1f8),'recurve-bow',,_0x39d098(0x25d),_0x39d098(0x237),_0x39d098(0x228),_0x39d098(0x241),_0x39d098(0x1d9),_0x39d098(0x23e),_0x39d098(0x24a),_0x39d098(0x232)],catalystlist=[_0x39d098(0x20a),_0x39d098(0x1e3),_0x39d098(0x1c1),_0x39d098(0x21e),_0x39d098(0x222),'magic-guide','mappa-mare',_0x39d098(0x22e),_0x39d098(0x21f),_0x39d098(0x1fb),_0x39d098(0x1c2),_0x39d098(0x255),_0x39d098(0x244),'skyward-atlas',_0x39d098(0x1e9),'the-widsith',_0x39d098(0x22d),'twin-nephrite',_0x39d098(0x1bb)],greatswordlist=[_0x39d098(0x23a),'debate-club','favonius-greatsword','ferrous-shadow',,_0x39d098(0x250),_0x39d098(0x216),,_0x39d098(0x20d),_0x39d098(0x1fa),_0x39d098(0x218),_0x39d098(0x1b2),_0x39d098(0x1ca),_0x39d098(0x1ae),_0x39d098(0x229),_0x39d098(0x253),_0x39d098(0x23f),_0x39d098(0x245),_0x39d098(0x22b)],polearmlist=['beginners-protector',_0x39d098(0x1fe),_0x39d098(0x1cc),_0x39d098(0x24e),_0x39d098(0x242),'favonius-lance',_0x39d098(0x23b),_0x39d098(0x1d4),_0x39d098(0x212),_0x39d098(0x1f7),_0x39d098(0x1d7),'white-tassel'],swordlist=[_0x39d098(0x1dc),_0x39d098(0x233),_0x39d098(0x1f9),_0x39d098(0x201),_0x39d098(0x22a),_0x39d098(0x207),_0x39d098(0x1d8),_0x39d098(0x252),_0x39d098(0x226),'prototype-rancour','sacrificial-sword','silver-sword',_0x39d098(0x208),'skyward-blade','the-black-sword',_0x39d098(0x1f3),_0x39d098(0x1fd)],weaponlist=[bowlist,catalystlist,greatswordlist,polearmlist,swordlist],wpmax=[0x46,0x46,0x5a-0xa,0x5a-0xa,0x5a-0xa];var collapseToggle=![],collapseText={'false':_0x39d098(0x1c0),'true':'Expand'},uncollapsed,collapsed,startbtn,charstart,charend,weapstart,weapend,talent,rarity=0x4,prevcharselected,charselected=_0x39d098(0x1c5),prevweapselected,weapselected=_0x39d098(0x1d0),charname='Amber',weapname=_0x39d098(0x1c6);let j='{}';var toJson=_0x4f30b0=>{const _0x278ffa=_0x39d098;let _0x324df1='{',_0x24401b=_0x4f30b0[_0x278ffa(0x231)]('\x20'),_0x1739af=0x1;_0x24401b[_0x278ffa(0x1cf)](_0x10e0eb=>{const _0x94b388=_0x278ffa;_0x1739af==0x1&&(_0x324df1+='\x0a\x09'+_0x10e0eb+_0x94b388(0x20e));if(_0x1739af==0x3){while(_0x10e0eb[_0x94b388(0x24d)](','))_0x10e0eb=_0x10e0eb[_0x94b388(0x1c7)](',','');if(_0x10e0eb==='-')_0x10e0eb=null;_0x324df1+=_0x10e0eb+',';}_0x1739af++;if(_0x1739af==0x4)_0x1739af=0x1;}),_0x324df1+='\x0a}',console['log'](_0x324df1);},toggleCollapse=()=>{const _0xaf6ac9=_0x39d098;let _0x1b0b7b=document[_0xaf6ac9(0x219)](_0xaf6ac9(0x259)),_0xcf843f=_0x1b0b7b[_0xaf6ac9(0x206)](!![]);if(collapsed!=null){clearCards();if(collapseToggle)for(let _0x2da9a7 in collapsed){createCard(_0x2da9a7,collapsed[_0x2da9a7],'o');}else for(let _0x16d8c5=0x0;_0x16d8c5<uncollapsed[_0xaf6ac9(0x1dd)][_0xaf6ac9(0x258)];_0x16d8c5++){let _0x5d0ac1=uncollapsed[_0xaf6ac9(0x1dd)][_0x16d8c5][_0xaf6ac9(0x257)](_0xaf6ac9(0x1c4))[_0xaf6ac9(0x1d3)];while(_0x5d0ac1['includes'](','))_0x5d0ac1=_0x5d0ac1[_0xaf6ac9(0x1c7)](',','');createCard(uncollapsed[_0xaf6ac9(0x1dd)][_0x16d8c5]['id'],_0x5d0ac1,uncollapsed[_0xaf6ac9(0x1dd)][_0x16d8c5][_0xaf6ac9(0x24b)][0x1]);}}else{uncollapsed=_0xcf843f[_0xaf6ac9(0x206)](!![]);let _0x40cd38={};for(let _0x1fe704=0x0;_0x1fe704<uncollapsed[_0xaf6ac9(0x1dd)]['length'];_0x1fe704++){if(_0x40cd38[uncollapsed[_0xaf6ac9(0x1dd)][_0x1fe704]['id']]==undefined)_0x40cd38[uncollapsed['childNodes'][_0x1fe704]['id']]=0x0;let _0x354d00=uncollapsed[_0xaf6ac9(0x1dd)][_0x1fe704]['querySelector']('.amt-text')[_0xaf6ac9(0x1d3)];while(_0x354d00[_0xaf6ac9(0x24d)](',')){_0x354d00=_0x354d00[_0xaf6ac9(0x1c7)](',','');}_0x40cd38[uncollapsed['childNodes'][_0x1fe704]['id']]+=parseInt(_0x354d00);}clearCards();for(let _0x4f8a7a in _0x40cd38){createCard(_0x4f8a7a,_0x40cd38[_0x4f8a7a],'o');}collapsed=_0x40cd38;}},sortCards=()=>{const _0x23e820=_0x39d098;let _0x3bb99c=document[_0x23e820(0x219)](_0x23e820(0x259)),_0x56f271=document['getElementById'](_0x23e820(0x259))[_0x23e820(0x206)](!![]),_0x35c7d8=_0x56f271[_0x23e820(0x1be)]('c'),_0x5733e7=_0x56f271[_0x23e820(0x1be)]('t'),_0xf6bb78=_0x56f271[_0x23e820(0x1be)]('w');clearCards();for(let _0xf69f9c=0x0;_0xf69f9c<_0x35c7d8[_0x23e820(0x258)];_0xf69f9c++){_0x3bb99c[_0x23e820(0x1b5)](_0x35c7d8[_0xf69f9c][_0x23e820(0x206)](!![]));}for(let _0x51c5a2=0x0;_0x51c5a2<_0x5733e7[_0x23e820(0x258)];_0x51c5a2++){_0x3bb99c[_0x23e820(0x1b5)](_0x5733e7[_0x51c5a2]['cloneNode'](!![]));}for(let _0x6d98a9=0x0;_0x6d98a9<_0xf6bb78['length'];_0x6d98a9++){_0x3bb99c[_0x23e820(0x1b5)](_0xf6bb78[_0x6d98a9][_0x23e820(0x206)](!![]));}},clearCards=()=>{const _0x3b6024=_0x39d098;document[_0x3b6024(0x257)]('#popup-content')[_0x3b6024(0x1d3)]='';},getNewMargin=_0x5f2ecf=>{return(0x64-_0x5f2ecf)/0x2;},preloadImage=()=>{const _0xc7cf8c=_0x39d098;for(let _0x172221 in _0x480bb7){for(let _0x5ab60f in _0x480bb7[_0x172221]){var _0x43704e=new Image();_0x43704e[_0xc7cf8c(0x1e7)]=_0xc7cf8c(0x1d5)+_0x480bb7[_0x172221][_0x5ab60f]+_0xc7cf8c(0x234);}}};preloadImage();var toggleTalents=_0x3f544e=>{const _0x42ee13=_0x39d098;if(_0x3f544e){var _0x2b61a6=document['querySelector'](_0x42ee13(0x24c));return;}else{var _0x2b61a6=document[_0x42ee13(0x257)](_0x42ee13(0x24c));return;}},resizeImg=(_0xd4a0aa,_0x2756ca,_0x5a3890)=>{const _0xd59ef7=_0x39d098;let _0x910a31=_0xd4a0aa['parentNode'],_0x4c6161=_0xd4a0aa[_0xd59ef7(0x1e7)],_0x140022=_0xd4a0aa['id'],_0x14c9a6=getNewMargin(_0x2756ca)+'px',_0x59d796=getNewMargin(_0x5a3890)+'px';_0x910a31[_0xd59ef7(0x1d3)]=_0xd59ef7(0x1b4)+_0x4c6161+_0xd59ef7(0x1ed)+_0x140022+'\x27\x20style=\x27width:\x20'+_0x2756ca+_0xd59ef7(0x1ce)+_0x5a3890+_0xd59ef7(0x1c9)+_0x14c9a6+_0xd59ef7(0x1e4)+_0x59d796+_0xd59ef7(0x1df)+'>',console[_0xd59ef7(0x249)](_0xd59ef7(0x1ba));},forceAspectRatio=(_0x3d5fc3,_0x4fafaa)=>{const _0x553fe8=_0x39d098;let _0x49a427=0x0,_0x48c1b7=0x0;_0x3d5fc3[_0x553fe8(0x213)]=_0x22a805=>{const _0x4cadb3=_0x553fe8;_0x49a427=_0x3d5fc3[_0x4cadb3(0x1b8)],_0x48c1b7=_0x3d5fc3['naturalHeight'];let _0x183710=_0x48c1b7/_0x49a427;while(_0x49a427>0x64){_0x49a427*=0.95,_0x48c1b7=_0x183710*_0x49a427;}while(_0x48c1b7>0x64){_0x48c1b7*=0.95,_0x49a427=_0x48c1b7/_0x183710;}let _0x442f70=document[_0x4cadb3(0x1be)](_0x4fafaa);for(let _0x2432ad=0x0;_0x2432ad<_0x442f70[_0x4cadb3(0x258)];_0x2432ad++){if(_0x442f70[_0x2432ad]['id']===_0x3d5fc3['id'][_0x4cadb3(0x205)](0x2)){_0x3d5fc3=_0x442f70[_0x2432ad][_0x4cadb3(0x1dd)][0x0][_0x4cadb3(0x1c3)][_0x4cadb3(0x1c3)];break;}}_0x48c1b7<0x61&&(_0x3d5fc3[_0x4cadb3(0x20b)][_0x4cadb3(0x20b)][_0x4cadb3(0x20b)][_0x4cadb3(0x1b0)][_0x4cadb3(0x1af)][_0x4cadb3(0x247)]=_0x4cadb3(0x1ea)),_0x3d5fc3[_0x4cadb3(0x1af)][_0x4cadb3(0x1e5)]=_0x49a427+'px',_0x3d5fc3[_0x4cadb3(0x1af)][_0x4cadb3(0x1de)]=_0x48c1b7+'px',_0x3d5fc3[_0x4cadb3(0x1af)][_0x4cadb3(0x22f)]=getNewMargin(_0x49a427)+'px',_0x3d5fc3['style'][_0x4cadb3(0x1bc)]=getNewMargin(_0x48c1b7)*0x2+'px',_0x3d5fc3[_0x4cadb3(0x1af)][_0x4cadb3(0x1e6)]=_0x4cadb3(0x204);};},createCard=(_0x43a2ba,_0x15d519,_0x1701b1)=>{const _0x30fbca=_0x39d098;if(_0x15d519<=0x0)return;let _0x342ccb=document['querySelector'](_0x30fbca(0x1cb)),_0x4046f0='/src/img/items/'+_0x43a2ba+_0x30fbca(0x234),_0x34ec81=_0x30fbca(0x23c)+_0x1701b1+_0x30fbca(0x1ed)+_0x43a2ba+'\x27>'+'<div\x20class=\x27card-main\x20tooltip\x27>'+_0x30fbca(0x1e2)+_0x30fbca(0x1b4)+_0x4046f0+_0x30fbca(0x215)+_0x43a2ba+'\x27>'+'</div>'+_0x30fbca(0x1f5)+nameextract(_0x43a2ba)+_0x30fbca(0x1eb)+'</div>'+_0x30fbca(0x230)+_0x30fbca(0x25b)+currencyformat(_0x15d519)+_0x30fbca(0x1d2)+'</div>'+_0x30fbca(0x1d2);_0x342ccb['innerHTML']+=_0x34ec81;let _0x40651a=document['querySelector']('#i-'+_0x43a2ba);forceAspectRatio(_0x40651a,_0x1701b1);};window['onload']=function(){const _0x164b52=_0x39d098;var _0xf891f7=document[_0x164b52(0x1be)](_0x164b52(0x1ad)),_0x55c5cd=document['getElementById'](_0x164b52(0x246));for(let _0x545428 in weaponlist){for(let _0x3eb8dd in weaponlist[_0x545428]){_0x55c5cd[_0x164b52(0x1d3)]+=_0x164b52(0x1ec)+weaponlist[_0x545428][_0x3eb8dd]+_0x164b52(0x238)+weaponlist[_0x545428][_0x3eb8dd]+_0x164b52(0x1f2)+weaponlist[_0x545428][_0x3eb8dd]+_0x164b52(0x1ac);if(weapselected===weaponlist[_0x545428][_0x3eb8dd]){var _0x1bb78c=document[_0x164b52(0x219)]('i-'+weaponlist[_0x545428][_0x3eb8dd]);_0x1bb78c[_0x164b52(0x1af)][_0x164b52(0x1e0)]=_0x164b52(0x1b7);}}}for(var _0x5417ad in _0xf891f7){if(_0xf891f7[_0x5417ad]['id']==null)break;var _0x5417ad=_0xf891f7[_0x5417ad]['id'],_0x103ee9=document[_0x164b52(0x219)](_0x5417ad);_0x103ee9[_0x164b52(0x1d3)]=_0x164b52(0x21c)+_0x5417ad+_0x164b52(0x202)+_0x5417ad+_0x164b52(0x224);;if(_0x5417ad===charselected){var _0x1bb78c=document[_0x164b52(0x219)]('i-'+_0x5417ad);_0x1bb78c[_0x164b52(0x1af)][_0x164b52(0x1e0)]=_0x164b52(0x1b7);}}charstart=document['querySelector'](_0x164b52(0x20f)),charend=document[_0x164b52(0x257)]('#char-end'),weapstart=document[_0x164b52(0x257)](_0x164b52(0x1ef)),weapend=document[_0x164b52(0x257)](_0x164b52(0x240)),talent=document[_0x164b52(0x257)](_0x164b52(0x21b)),startbtn=document['querySelector'](_0x164b52(0x1d1)),charstart[_0x164b52(0x23d)](_0x164b52(0x25a),_0xedd3e=>forceNumFormat(_0xedd3e)),charend[_0x164b52(0x23d)](_0x164b52(0x25a),_0x1a57a5=>forceNumFormat(_0x1a57a5)),weapstart[_0x164b52(0x23d)](_0x164b52(0x25a),_0x524954=>forceNumFormat(_0x524954)),weapend[_0x164b52(0x23d)](_0x164b52(0x25a),_0x433d55=>forceNumFormat(_0x433d55)),startbtn[_0x164b52(0x23d)](_0x164b52(0x1f0),()=>{const _0x1e05f1=_0x164b52;collapsed=null,collapseToggle=![],document[_0x1e05f1(0x257)](_0x1e05f1(0x235))[_0x1e05f1(0x1d3)]=collapseText[collapseToggle],forceInRange();let _0x2d370d=[];_0x2d370d[_0x1e05f1(0x221)](_0x1436f1(charselected,charstart['value'],charend[_0x1e05f1(0x24f)],_0x1e05f1(0x243))),_0x2d370d[_0x1e05f1(0x221)](_0x1436f1(weapselected,weapstart[_0x1e05f1(0x24f)],weapend[_0x1e05f1(0x24f)],'wp')),clearCards();let _0x529707,_0x165e6a;_0x2d370d[_0x1e05f1(0x1cf)](_0xb1a56=>{const _0x7d042a=_0x1e05f1;if(_0xb1a56!=null){_0x529707=_0xb1a56[_0x7d042a(0x203)];if(_0x529707==0x0)_0x165e6a='c';if(_0x529707==0x1)_0x165e6a='w';createCard(_0x7d042a(0x1ff),_0xb1a56[_0x7d042a(0x1ff)],_0x165e6a);if(_0xb1a56[_0x7d042a(0x1b6)]!=undefined)createCard(_0x7d042a(0x1ff),_0xb1a56[_0x7d042a(0x1b6)],'t');let _0xb48acd=_0xb1a56['mat'];for(let _0x3243bd in _0xb48acd[_0x7d042a(0x200)]){createCard(_0x3243bd,_0xb48acd[_0x7d042a(0x200)][_0x3243bd],_0x165e6a);}for(let _0xc7513b in _0xb48acd){if(_0xc7513b===_0x7d042a(0x200))continue;let _0x909368=_0xc7513b[_0x7d042a(0x225)](_0xc7513b[_0x7d042a(0x258)]-0x1,_0xc7513b['length']-0x1),_0x1dbe5f=_0xc7513b[_0x7d042a(0x225)](0x0,_0xc7513b[_0x7d042a(0x258)]-0x1);createCard(_0x1dbe5f,_0xb48acd[_0xc7513b],_0x909368);}}}),sortCards(),document[_0x1e05f1(0x257)]('#popup-container')['style'][_0x1e05f1(0x1ee)]='visible';}),document[_0x164b52(0x23d)](_0x164b52(0x1f0),_0x3c99b6=>{const _0x198325=_0x164b52;forceInRange();var _0x58ac41=document[_0x198325(0x257)](_0x198325(0x1bf));if(_0x3c99b6[_0x198325(0x217)][_0x198325(0x24b)]['contains'](_0x198325(0x243)))avatarselect(_0x3c99b6['target']);else{if(_0x3c99b6[_0x198325(0x217)][_0x198325(0x24b)][_0x198325(0x1da)](_0x198325(0x256)))weaponselect(_0x3c99b6[_0x198325(0x217)]);else{if(_0x3c99b6[_0x198325(0x217)]['id']===_0x198325(0x251))_0x3c99b6[_0x198325(0x217)][_0x198325(0x1af)]['visibility']=_0x198325(0x214),clearCards();else{if(_0x3c99b6[_0x198325(0x217)]['id']==='collapse')collapseToggle=!collapseToggle,_0x3c99b6[_0x198325(0x217)][_0x198325(0x1d3)]=collapseText[collapseToggle],toggleCollapse();else{if(_0x3c99b6[_0x198325(0x217)]['id']===_0x198325(0x1f4))showfaq();else _0x3c99b6['target']['id']===_0x198325(0x254)&&toggleTalents(_0x3c99b6[_0x198325(0x217)][_0x198325(0x1b3)]);}}}}});};var avatarselect=_0x958701=>{const _0x20661a=_0x39d098;if(charselected===_0x958701['id']['substring'](0x2,_0x958701['id'][_0x20661a(0x258)])){charselected=null,_0x958701[_0x20661a(0x1af)][_0x20661a(0x1e0)]='',document[_0x20661a(0x219)](_0x20661a(0x1fc))[_0x20661a(0x1d3)]=_0x20661a(0x21d);return;}prevcharselected=charselected,charselected=_0x958701['id'][_0x20661a(0x205)](0x2,_0x958701['id'][_0x20661a(0x258)]);if(prevcharselected!==null){var _0x1a34ab=document[_0x20661a(0x219)]('i-'+prevcharselected);_0x1a34ab[_0x20661a(0x1af)][_0x20661a(0x1e0)]='';}_0x958701[_0x20661a(0x1af)][_0x20661a(0x1e0)]=_0x20661a(0x1b7),charname=charselected[0x0][_0x20661a(0x20c)]()+charselected[_0x20661a(0x225)](0x1,charselected[_0x20661a(0x258)]),document['getElementById']('char-name')[_0x20661a(0x1d3)]=charname;},weaponselect=_0x441595=>{const _0x4cda95=_0x39d098;if(weapselected===_0x441595['id'][_0x4cda95(0x205)](0x2,_0x441595['id'][_0x4cda95(0x258)])){weapselected=null,_0x441595[_0x4cda95(0x1af)]['border']='',document[_0x4cda95(0x219)](_0x4cda95(0x1c8))[_0x4cda95(0x1d3)]=_0x4cda95(0x21d);return;}prevweapselected=weapselected,weapselected=_0x441595['id'][_0x4cda95(0x205)](0x2,_0x441595['id'][_0x4cda95(0x258)]);if(prevweapselected!==null){var _0x2d2457=document[_0x4cda95(0x219)]('i-'+prevweapselected);_0x2d2457['style'][_0x4cda95(0x1e0)]='';}rarity=_0x4e6502[weapselected],changeConstraints(rarity),_0x441595[_0x4cda95(0x1af)][_0x4cda95(0x1e0)]=_0x4cda95(0x1b7),weapname=weapselected[0x0]['toUpperCase']()+weapselected[_0x4cda95(0x225)](0x1,weapselected[_0x4cda95(0x258)]),document[_0x4cda95(0x219)](_0x4cda95(0x1c8))[_0x4cda95(0x1d3)]=nameextract(weapname);},forceNumFormat=_0x171290=>{const _0x2129f1=_0x39d098;if(_0x171290[_0x2129f1(0x217)][_0x2129f1(0x24f)][_0x2129f1(0x258)]>0x1)_0x171290[_0x2129f1(0x217)][_0x2129f1(0x24f)]=_0x171290[_0x2129f1(0x217)][_0x2129f1(0x24f)][_0x2129f1(0x225)](0x0,0x1);},forceInRange=()=>{const _0x5862b5=_0x39d098;if(charstart[_0x5862b5(0x24f)]>charstart[_0x5862b5(0x1f6)])charstart[_0x5862b5(0x24f)]=charstart[_0x5862b5(0x1f6)];if(charstart[_0x5862b5(0x24f)]<charstart[_0x5862b5(0x1cd)])charstart['value']=charstart[_0x5862b5(0x1cd)];if(charend[_0x5862b5(0x24f)]>charend[_0x5862b5(0x1f6)])charend[_0x5862b5(0x24f)]=charend[_0x5862b5(0x1f6)];if(charend['value']<charend[_0x5862b5(0x1cd)])charend[_0x5862b5(0x24f)]=charend[_0x5862b5(0x1cd)];if(weapstart[_0x5862b5(0x24f)]>weapstart[_0x5862b5(0x1f6)])weapstart[_0x5862b5(0x24f)]=weapstart['max'];if(weapstart[_0x5862b5(0x24f)]<weapstart['min'])weapstart[_0x5862b5(0x24f)]=weapstart[_0x5862b5(0x1cd)];if(weapend[_0x5862b5(0x24f)]>weapend[_0x5862b5(0x1f6)])weapend[_0x5862b5(0x24f)]=weapend[_0x5862b5(0x1f6)];if(weapend[_0x5862b5(0x24f)]<weapend[_0x5862b5(0x1cd)])weapend[_0x5862b5(0x24f)]=weapend[_0x5862b5(0x1cd)];if(charstart[_0x5862b5(0x24f)]>=charend[_0x5862b5(0x24f)])charstart[_0x5862b5(0x24f)]=charend['value']-0x1;if(weapstart[_0x5862b5(0x24f)]>=weapend[_0x5862b5(0x24f)])weapstart[_0x5862b5(0x24f)]=weapend[_0x5862b5(0x24f)]-0x1;},nameextract=_0x4a37dc=>{const _0x1006b1=_0x39d098;let _0x2cb2ca=_0x4a37dc;while(_0x2cb2ca['includes']('-')){_0x2cb2ca=_0x2cb2ca['replace']('-','\x20');}_0x2cb2ca=_0x2cb2ca[_0x1006b1(0x231)]('\x20');for(let _0x39aa41=0x0;_0x39aa41<_0x2cb2ca['length'];_0x39aa41++){_0x2cb2ca[_0x39aa41]=_0x2cb2ca[_0x39aa41][_0x1006b1(0x210)](0x0)['toUpperCase']()+_0x2cb2ca[_0x39aa41][_0x1006b1(0x223)](0x1);}return _0x2cb2ca=_0x2cb2ca[_0x1006b1(0x1d6)]('\x20'),_0x2cb2ca;},currencyformat=_0x5c0913=>{const _0x86a914=_0x39d098;_0x5c0913=Math[_0x86a914(0x1e1)](_0x5c0913),_0x5c0913+='';let _0x261c92=_0x5c0913[_0x86a914(0x258)]-0x1,_0x39b838=0x0,_0x41c675='';while(_0x261c92>=0x0){if(_0x39b838%0x3==0x0&&_0x39b838!=0x0)_0x41c675+=',';_0x41c675+=_0x5c0913[_0x261c92],_0x39b838++,_0x261c92--;}return _0x41c675=_0x41c675[_0x86a914(0x231)]('')[_0x86a914(0x1b9)]()[_0x86a914(0x1d6)](''),_0x41c675;},changeConstraints=_0x27b610=>{const _0x476eba=_0x39d098;let _0x52c9bf=wpmax[_0x27b610-0x1];weapend[_0x476eba(0x1f6)]=_0x52c9bf;};
+import calc from './calc.js';
+import rules from './rules.js';
+import materiallist from './materials.js';
+import wprarity from './wprarity.js';
+import analytics from './analytics.js';
+
+analytics();
+
+//xp to go to level N = levels[N] - levels[N-1]
+//mora cost = 5xp per mora
+
+const faqtitles = {
+    0 : "Is There Mobile Support?",
+    1 : "Where did you get the data?",
+    2 : "Why is there no Traveler/MC?",
+    3 : "Why is the ___ I am looking for not showing?",
+    4 : "You are showing the wrong data!"
+}
+
+const faqanswers = {
+    0 : "Support for mobile devices are currently minimal",
+    1 : "Data is taken and compiled largely from the official Genshin Impact wiki, otherwise they are based on unofficial sources which are prone to inaccuracies and changes.",
+    2 : "The Traveler is unique which will take some time to implement.",
+    3 : "As per (1), data is taken largely from the official wiki, so if no data is available for a certain character or weapon they cannot be calculated.",
+    4 : "Most of the data is manually typed in to the local database and ruleset which may cause some errors during entry, I try my best to fix all the errors. If you spot any mistakes or have a suggestion, feel free to DM me on Discord at IncinerateZ#4038."
+}
+
+var showfaq = () => {
+    let popup = document.querySelector("#popup-container");
+            popup.style.visibility = "visible";
+            let target = document.querySelector("#popup-content");
+            
+            target.innerHTML += 
+            "<div id='faq-text'>" +
+                "<div id='faq-title'> FAQ </div>" +
+                "<div class='faq-t'>" + faqtitles[0] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[0] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[1] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[1] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[2] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[2] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[3] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[3] + "</div>" +
+                "<div class='faq-t'>" + faqtitles[4] + "</div>" +
+                "<div class='faq-p'>" + faqanswers[4] + "</div>" +
+            "</div>"
+            ;
+}
+
+showfaq();
+
+const bowlist = ["alley-hunter", "amos-bow", "blackcliff-warbow", "compound-bow", /*"ebony-bow",*/ "favonius-warbow", "hunters-bow", "messenger", "prototype-crescent", "raven-bow", "recurve-bow", /*"royal-bow"*/, "rust", "sacrificial-bow", "seasoned-hunters-bow", "sharpshooters-oath", "skyward-harp", "slingshot", "the-stringless", "the-viridescent-hunt"];
+const catalystlist = [/*"amber-catalyst",*/ "apprentices-notes", /*"blackcliff-amulet",*/ "emerald-orb", "eye-of-perception", "favonius-codex", "lost-prayer-to-the-sacred-winds", "magic-guide", "mappa-mare", "memory-of-dust", "otherworldly-story", "pocket-grimoire", "prototype-malice", "royal-grimoire", "sacrificial-fragments", "skyward-atlas", "solar-pearl", "the-widsith", "thrilling-tales-of-dragon-slayers", "twin-nephrite", "wine-and-song"];
+const greatswordlist = [/*"blackcliff-slasher",*/ "bloodtainted-greatsword", "debate-club", "favonius-greatsword", "ferrous-shadow", /*"lithic-blade"*/, "old-mercs-pal", "prototype-aminus", /*"quartz"*/, "rainslasher", "royal-greatsword", "sacrificial-greatsword", "serpent-spine", "skyrider-greatsword", "skyward-pride", "the-bell", "waster-greatsword", "white-iron-greatsword", "whiteblind", "wolfs-gravestone"];
+const polearmlist = ["beginners-protector", "black-tassel", /*"blackcliff-pole",*/ "crescent-pike", "deathmatch", "dragons-bane", "favonius-lance", "halberd", "iron-point", /*"kunwus-iris-rift", "lithic-spear",*/ "primordial-jade-winged-spear", "prototype-grudge", "skyward-spine", "white-tassel"];
+const swordlist = ["aquila-favonia", /*"blackcliff-longsword",*/ "cool-steel", "dark-iron-sword", "dull-blade", "favonius-sword", "fillet-blade", "harbinger-of-dawn", "iron-sting", "lions-roar", "prototype-rancour", /*"royal-longsword",*/ "sacrificial-sword", "silver-sword", "skyrider-sword", "skyward-blade", /*"the-alley-flash",*/ "the-black-sword", "the-flute", "travelers-handy-sword"];
+const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist];
+
+const wpmax = [70, 70, 90 - 10, 90 - 10, 90 - 10];
+
+var collapseToggle = false;
+var collapseText = {
+    false : "Collapse",
+    true : "Expand"
+}
+
+var uncollapsed;
+var collapsed;
+
+var startbtn;
+
+var charstart;
+var charend;
+var weapstart;
+var weapend;
+var talent;
+
+var rarity = 4;
+
+var prevcharselected;
+var charselected = "amber";
+
+var prevweapselected;
+var weapselected = "alley-hunter";
+
+var charname = "Amber";
+var weapname = "Alley Hunter";
+
+let j =
+"{}";
+
+var toJson = (s) => {
+    let res = "{";
+    let t = s.split(" ");
+    let c = 1;
+    t.forEach(i => {
+        if(c == 1) {
+            res += "\n\t" + i + " : ";
+        }
+        if(c == 3) {
+            while(i.includes(",")) i = i.replace(",", "");
+            if(i === "-") i = null;
+            res += i + ",";
+        }
+        c++;
+        if(c == 4) c = 1;
+    });
+    res += "\n}"
+    console.log(res);
+}
+
+//toJson(j);
+//console.log(rules["temp"])
+
+var toggleCollapse = () => {
+    let target = document.getElementById("popup-content");
+    let target2 = target.cloneNode(true);
+    if(collapsed != null) {
+        clearCards();
+        if(collapseToggle) {
+            for(let i in collapsed) {
+                createCard(i, collapsed[i], "o");
+            }
+        } else {
+            for(let i = 0; i < uncollapsed.childNodes.length; i++) {
+                let dat = uncollapsed.childNodes[i].querySelector(".amt-text").innerHTML;
+                while(dat.includes(",")) dat = dat.replace(",", "");
+                createCard(uncollapsed.childNodes[i].id, dat, uncollapsed.childNodes[i].classList[1])
+            }
+        }
+    } else {
+        uncollapsed = target2.cloneNode(true);
+        let map = {};
+        for(let i = 0; i < uncollapsed.childNodes.length; i++) {
+            if(map[uncollapsed.childNodes[i].id] == undefined) map[uncollapsed.childNodes[i].id] = 0;
+            let dat = uncollapsed.childNodes[i].querySelector(".amt-text").innerHTML;
+            while(dat.includes(",")) {
+                dat = dat.replace(",", "");
+            }
+            map[uncollapsed.childNodes[i].id] += parseInt(dat);
+        }
+        clearCards();
+        for(let i in map) {
+            createCard(i, map[i], "o");
+        }
+        collapsed = map;
+    }
+}
+
+var sortCards = () => {
+    let target = document.getElementById("popup-content");
+    let target2 = document.getElementById("popup-content").cloneNode(true);
+
+    let c = target2.getElementsByClassName("c");
+    let t = target2.getElementsByClassName("t");
+    let w = target2.getElementsByClassName("w");
+
+    clearCards();
+
+    //chars
+    for(let card = 0; card < c.length; card++) {
+        target.appendChild(c[card].cloneNode(true));
+    }
+    for(let card = 0; card < t.length; card++) {
+        target.appendChild(t[card].cloneNode(true));
+    }
+    for(let card = 0; card < w.length; card++) {
+        target.appendChild(w[card].cloneNode(true));
+    }
+}
+
+var clearCards = () => {
+    document.querySelector("#popup-content").innerHTML = "";
+}
+
+var getNewMargin = (width) => {
+    return (100 - width) / 2;
+}
+
+var preloadImage = () => {
+    for(let base in materiallist) {
+        for(let n in materiallist[base]) {
+            var img = new Image();
+            img.src = './src/img/items/' + materiallist[base][n] + ".png";
+        }
+    }
+}
+
+preloadImage();
+
+var toggleTalents = (checked) => {
+    if(checked) {
+        var target = document.querySelector("#talent-setting-bar");
+        return;
+    } else {
+        var target = document.querySelector("#talent-setting-bar");
+        return;
+    }
+}
+
+var resizeImg = (img, w, h) => {
+    let parent = img.parentNode;
+    let src = img.src;
+    let id = img.id;
+    let mw = getNewMargin(w) + "px";
+    let mh = getNewMargin(h) + "px";
+    parent.innerHTML = "<img src='" + src + "' id='" + id + "' style='width: " + w + "px; height:" + h + "px; margin-left: " + mw + "px; margin-top: " + mh + "px;'"+ ">";
+    console.log("RESIZE")
+}
+
+var forceAspectRatio = (img, type) => {
+    //constraints  : width & height less than 100px
+    let tw = 0;
+    let th = 0;
+    img.onload = (e) => {
+        tw = img.naturalWidth;
+        th = img.naturalHeight;
+
+        let imgAR = th / tw;
+
+        while(tw > 100) {
+            tw *= 0.95;
+            th = imgAR * tw;
+        }
+        while(th > 100) {
+            th *= 0.95;
+            tw = th / imgAR;
+        }
+        /*if(tw == 0 || th == 0) {
+            tw = 90;
+            th = 90;
+        }*/
+        let tmp = document.getElementsByClassName(type);
+        for(let i = 0; i < tmp.length; i++) {
+            if(tmp[i].id === img.id.substring(2)) {
+                img = tmp[i].childNodes[0].firstChild.firstChild;
+                break;
+            }
+        }
+
+        if(th < 97) {
+            img.parentNode.parentNode.parentNode.lastChild.style.position = "relative";
+            //img.parentNode.parentNode.parentNode.lastChild.style.bottom = (th - 97)/10 + "px";
+        }
+
+        img.style.width = tw + "px";
+        img.style.height = th + "px";
+        img.style.marginLeft = getNewMargin(tw) + "px";
+        img.style.marginTop = getNewMargin(th) * 2 + "px";
+        img.style.transform = "translateY(-4px)";
+    }
+}
+
+var createCard = (name, amount, type) => {
+    if(amount <= 0) return;
+    let target = document.querySelector("#popup-content");
+    let imgsrc = "/src/img/items/" + name + ".png";
+    let res = 
+    "<div class='item-card " + type + "' id='" + name + "'>" +
+        "<div class='card-main tooltip'>" +
+            "<div class='img-box'>" +
+                "<img src='" + imgsrc + "' id='i-" + name + "'>" +
+            "</div>" +
+            "<span class='tooltiptext'>" + nameextract(name) + "</span>" +
+        "</div>" +
+        "<div class='amt-box'>" +
+            "<div class='amt-text card-content'>" + currencyformat(amount) +
+            "</div>" +
+        "</div>" +
+    "</div>"
+    ;
+    target.innerHTML += res;
+
+    let img = document.querySelector("#i-" + name);
+    forceAspectRatio(img, type);
+}
+
+window.onload = function() {
+    
+    var characterlist = document.getElementsByClassName("character");
+    var weapons = document.getElementById("weapon-bar");
+    //load weapons
+    for(let list in weaponlist) {
+        for(let weapon in weaponlist[list]) {
+            weapons.innerHTML += "<div class='icon weapons' id='" + weaponlist[list][weapon] + "'><img class='avatar weap' id='i-" + weaponlist[list][weapon] + "' src='src/img/weapons/" + weaponlist[list][weapon] + ".png'></div>"
+            if(weapselected === weaponlist[list][weapon]) {
+                var s = document.getElementById("i-" + weaponlist[list][weapon]);
+                s.style.border = "2px solid gold";
+            }
+        }
+    }
+
+    //load characters
+    for(var char in characterlist){
+        if(characterlist[char].id == null) break;
+        var char = characterlist[char].id;
+        var charicon = document.getElementById(char);
+        charicon.innerHTML = "<img class='avatar char' id='i-" + char + "' src='src/img/characters/gi-" + char + ".png'>";;
+        if(char === charselected) {
+            var s = document.getElementById("i-" + char);
+            s.style.border = "2px solid gold";
+        }
+    }
+    //load settings
+    charstart = document.querySelector('#char-start');
+    charend = document.querySelector('#char-end');
+    weapstart = document.querySelector('#weap-start');
+    weapend = document.querySelector('#weap-end');
+    talent = document.querySelector('#talent');
+
+    startbtn = document.querySelector("#start-btn");
+
+    //setting input box force charlength
+    charstart.addEventListener("keydown", (e) => forceNumFormat(e));
+    charend.addEventListener("keydown", (e) => forceNumFormat(e));
+    weapstart.addEventListener("keydown", (e) => forceNumFormat(e));
+    weapend.addEventListener("keydown", (e) => forceNumFormat(e));
+    startbtn.addEventListener("click", () => {
+        //clear collapse
+        collapsed = null;
+        collapseToggle = false;
+        document.querySelector("#collapse").innerHTML = collapseText[collapseToggle];
+
+        forceInRange();
+        let res = [];
+        res.push(calc(charselected, charstart.value, charend.value, "char"));
+        res.push(calc(weapselected, weapstart.value, weapend.value, "wp"));
+
+        //clear prev cards
+        clearCards();
+        //create cards
+        let c;
+        let type;
+        res.forEach((list) => {
+            if(list != null) {
+                c = list["type"];
+                if(c==0) type = "c";
+                if(c==1) type = "w"
+                createCard("mora", list["mora"], type);
+                if(list["mora2"] != undefined) createCard("mora", list["mora2"], "t");
+                let mats = list["mat"];
+                for(let i in mats["xpmats"]) {
+                    createCard(i, mats["xpmats"][i], type);
+                }
+                for(let i in mats) {
+                    if(i === "xpmats") continue;
+                    let type = i.substr(i.length - 1, i.length - 1);
+                    let m = i.substr(0, i.length - 1);
+                    createCard(m, mats[i], type);
+                }
+            }
+        });
+        sortCards();
+
+        document.querySelector("#popup-container").style.visibility = "visible";
+    });
+
+
+    document.addEventListener("click", (e) => {
+        forceInRange();
+        var tt = document.querySelector("#char-check");
+        if(e.target.classList.contains("char")) {
+            avatarselect(e.target);
+        } else if (e.target.classList.contains("weap")) {
+            weaponselect(e.target);
+        } else if (e.target.id === "popup-container") {
+            e.target.style.visibility = "hidden";
+            clearCards();
+        } else if (e.target.id === "collapse") {
+            collapseToggle = !collapseToggle;
+            e.target.innerHTML = collapseText[collapseToggle];
+            toggleCollapse();
+        } else if (e.target.id === "faq") {
+            showfaq();
+        } else if (e.target.id === "talent") {
+            toggleTalents(e.target.checked);
+        }
+    })
+}
+
+var avatarselect = charicon => {
+    if(charselected === charicon.id.substring(2, charicon.id.length)) {
+        charselected = null;
+        charicon.style.border = "";
+        document.getElementById("char-name").innerHTML = "None";
+        return;
+    }
+    prevcharselected = charselected;
+    charselected = charicon.id.substring(2, charicon.id.length);
+    if(prevcharselected !== null) {
+        var prev = document.getElementById("i-" + prevcharselected);
+        prev.style.border = "";
+    }
+    charicon.style.border = "2px solid gold";
+    charname = charselected[0].toUpperCase() + charselected.substr(1, charselected.length);
+    document.getElementById("char-name").innerHTML = charname;
+    //id = charselected
+}
+
+var weaponselect = weapicon => {
+    if(weapselected === weapicon.id.substring(2, weapicon.id.length)) {
+        weapselected = null;
+        weapicon.style.border = "";
+        document.getElementById("weapon-name").innerHTML = "None";
+        return;
+    }
+    prevweapselected = weapselected;
+    weapselected = weapicon.id.substring(2, weapicon.id.length);
+    if(prevweapselected !== null) {
+        var prev = document.getElementById("i-" + prevweapselected);
+        prev.style.border = "";
+    }
+    rarity = wprarity[weapselected];
+    changeConstraints(rarity);
+    weapicon.style.border = "2px solid gold";
+    weapname = weapselected[0].toUpperCase() + weapselected.substr(1, weapselected.length);
+    document.getElementById("weapon-name").innerHTML = nameextract(weapname);
+    //id = weapselected
+}
+
+var forceNumFormat = (e) => {
+    if(e.target.value.length > 1) e.target.value = e.target.value.substr(0, 1);
+};
+
+var forceInRange = () => {
+    //charstart
+    if(charstart.value > charstart.max) charstart.value = charstart.max;
+    if(charstart.value < charstart.min) charstart.value = charstart.min;
+    //charend
+    if(charend.value > charend.max) charend.value = charend.max;
+    if(charend.value < charend.min) charend.value = charend.min;
+    //wpstart
+    if(weapstart.value > weapstart.max) weapstart.value = weapstart.max;
+    if(weapstart.value < weapstart.min) weapstart.value = weapstart.min;
+    //wpend
+    if(weapend.value > weapend.max) weapend.value = weapend.max;
+    if(weapend.value < weapend.min) weapend.value = weapend.min;
+
+    if(charstart.value >= charend.value) charstart.value = charend.value - 1;
+    if(weapstart.value >= weapend.value) weapstart.value = weapend.value - 1;
+}
+
+var nameextract = name => {
+    let res = name;
+    while(res.includes("-")) {
+        res = res.replace("-", " ");
+    }
+    res = res.split(" ");
+    for(let i = 0; i < res.length; i++) {
+        res[i] = res[i].charAt(0).toUpperCase() + res[i].slice(1);
+    }
+    res = res.join(" ");
+    return res;
+}
+
+var currencyformat = amount => {
+    amount = Math.floor(amount);
+    amount += "";
+    let i = amount.length - 1;
+    let c = 0;
+    let res = "";
+    while(i >= 0) {
+        if(c % 3 == 0 && c != 0) res += ",";
+        res += amount[i];
+        c++;
+        i--;
+    }
+    res = res.split("").reverse().join("")
+    return res;
+}
+
+var changeConstraints = (rarity) => {
+    let max = wpmax[rarity - 1];
+    weapend.max = max;
+}
