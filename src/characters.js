@@ -87,10 +87,10 @@ const characters = {
         "ascension" : "agnidus-agate,everflame-seed,jueyun-chili,slime",
         "talents" : "diligence,dvalins-claw,slime"
     },
-    "xiao" : {
+    /*"xiao" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,qingxin,arrowhead",
         "talents" : "prosperity,unknown,arrowhead"
-    },
+    },*/
     "xingqiu" : {
         "ascension" : "shivada-jade,cleansing-heart,silk-flower,mask",
         "talents" : "gold,tail-of-boreas,mask"
