@@ -57,6 +57,11 @@ body {
     background-color: #b9295b;
 }
 
+.grey {
+    background-color: #555;
+    opacity: 50%;
+}
+
 .card-content {
     margin: auto
 }
@@ -310,8 +315,8 @@ input[type=number] {
 
 #character-bar {
     width: 164px;
-    height: 435px;
-    /*height: 486px;*/
+    /*height: 435px;*/
+    height: 486px;
 }
 
 #weapon-setting-title {
