@@ -97,7 +97,7 @@ const characters = {
     },
     "xinyan" : {
         "ascension" : "agnidus-agate,everflame-seed,violetgrass,insignia-1",
-        "talents" : "gold,unknown,insignia-1"
+        "talents" : "gold,tusk-of-monoceros-caeli,insignia-1"
     },
     "zhongli" : {
         "ascension" : "prithiva-topaz,basalt-pillar,cor-lapis,slime",
