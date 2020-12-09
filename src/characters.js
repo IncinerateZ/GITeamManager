@@ -1,4 +1,8 @@
 const characters = {
+    "albedo" : {
+        "ascension" : "prithiva-topaz,basalt-pillar,cecilia,scroll",
+        "talents" : "ballad,tusk-of-monoceros-caeli,scroll"
+    },
     "amber" : {
         "ascension" : "agnidus-agate,everflame-seed,small-lamp-grass,arrowhead",
         "talents" : "freedom,dvalins-sigh,arrowhead"
@@ -34,6 +38,10 @@ const characters = {
     "fischl" : {
         "ascension" : "vajrada-amethyst,lightning-prism,small-lamp-grass,arrowhead",
         "talents" : "ballad,spirit-locket-of-boreas,arrowhead"
+    },
+    "ganyu" : {
+        "ascension" : "shivada-jade,hoarfrost-core,qingxin,nectar",
+        "talents" : "diligense,shadow-of-the-warrior,nectar"
     },
     "jean" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,dandelion-seed,mask",
