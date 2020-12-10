@@ -317,7 +317,12 @@ input[type=number] {
     width: 164px;
     /*height: 435px;*/
     height: 486px;
+    overflow-y: scroll;
 }
+
+#character-bar::-webkit-scrollbar {
+    width: 1px;
+  }
 
 #weapon-setting-title {
     width: 200px;
