@@ -314,15 +314,23 @@ input[type=number] {
 }
 
 #character-bar {
-    width: 164px;
+    width: 170px;
     /*height: 435px;*/
     height: 486px;
     overflow-y: scroll;
 }
 
 #character-bar::-webkit-scrollbar {
-    width: 1px;
-  }
+    width: 3px;
+}
+
+#character-bar::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
+
+#character-bar::-webkit-scrollbar-thumb:hover {
+    background: lightgray;
+}
 
 #weapon-setting-title {
     width: 200px;
