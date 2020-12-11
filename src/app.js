@@ -65,7 +65,7 @@ To release, remove below and uncomment above
 
 */
 
-const upcomingweapons = ["dragonspine-spear", "festering-desire", "frostbearer", "snow-tombed-starsil   ver"];
+const upcomingweapons = ["dragonspine-spear", "festering-desire", "frostbearer", "snow-tombed-starsilver"];
 
 const wpmax = [70, 70, 90 - 10, 90 - 10, 90 - 10];
 
