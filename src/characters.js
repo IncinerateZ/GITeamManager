@@ -1,8 +1,8 @@
 const characters = {
-    /*"albedo" : {
+    "albedo" : {
         "ascension" : "prithiva-topaz,basalt-pillar,cecilia,scroll",
         "talents" : "ballad,tusk-of-monoceros-caeli,scroll"
-    },*/
+    },
     "amber" : {
         "ascension" : "agnidus-agate,everflame-seed,small-lamp-grass,arrowhead",
         "talents" : "freedom,dvalins-sigh,arrowhead"
@@ -39,10 +39,10 @@ const characters = {
         "ascension" : "vajrada-amethyst,lightning-prism,small-lamp-grass,arrowhead",
         "talents" : "ballad,spirit-locket-of-boreas,arrowhead"
     },
-    /*"ganyu" : {
+    "ganyu" : {
         "ascension" : "shivada-jade,hoarfrost-core,qingxin,nectar",
         "talents" : "diligense,shadow-of-the-warrior,nectar"
-    },*/
+    },
     "jean" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,dandelion-seed,mask",
         "talents" : "resistance,dvalins-plume,mask"
@@ -95,10 +95,10 @@ const characters = {
         "ascension" : "agnidus-agate,everflame-seed,jueyun-chili,slime",
         "talents" : "diligence,dvalins-claw,slime"
     },
-    /*"xiao" : {
+    "xiao" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,qingxin,arrowhead",
         "talents" : "prosperity,unknown,arrowhead"
-    },*/
+    },
     "xingqiu" : {
         "ascension" : "shivada-jade,cleansing-heart,silk-flower,mask",
         "talents" : "gold,tail-of-boreas,mask"

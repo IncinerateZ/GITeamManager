@@ -338,8 +338,21 @@ input[type=number] {
 }
 
 #weapon-bar {
+    /*width: 550px;*/
     width: 542px;
     height: 488px;
+}
+
+#weapon-bar::-webkit-scrollbar {
+    width: 3px;
+}
+
+#weapon-bar::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
+
+#weapon-bar::-webkit-scrollbar-thumb:hover {
+    background: lightgray;
 }
 
 .bar-text {

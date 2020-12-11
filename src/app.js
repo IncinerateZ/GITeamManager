@@ -65,7 +65,7 @@ To release, remove below and uncomment above
 
 */
 
-const upcomingweapons = [];
+const upcomingweapons = ["dragonspine-spear", "festering-desire", "frostbearer", "snow-tombed-starsil   ver"];
 
 const wpmax = [70, 70, 90 - 10, 90 - 10, 90 - 10];
 
@@ -89,12 +89,12 @@ var talent;
 var rarity = 4;
 
 var prevcharselected;
-var charselected = "amber";
+var charselected = "albedo";
 
 var prevweapselected;
 var weapselected = "alley-hunter";
 
-var charname = "Amber";
+var charname = "Albedo";
 var weapname = "Alley Hunter";
 
 let j =
