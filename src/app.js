@@ -67,7 +67,7 @@ To release, remove below and uncomment above
 
 const upcomingweapons = [];
 
-const wpmax = [70, 70, 90 - 10, 90 - 10, 90 - 10];
+const wpmax = [70, 70, 90 - 10, 90 - 10, 90];
 
 var collapseToggle = false;
 var collapseText = {
