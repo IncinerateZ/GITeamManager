@@ -41,7 +41,7 @@ const characters = {
     },
     "ganyu" : {
         "ascension" : "shivada-jade,hoarfrost-core,qingxin,nectar",
-        "talents" : "diligense,shadow-of-the-warrior,nectar"
+        "talents" : "diligence,shadow-of-the-warrior,nectar"
     },
     "jean" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,dandelion-seed,mask",
