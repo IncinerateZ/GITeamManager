@@ -96,8 +96,8 @@ const characters = {
         "talents" : "diligence,dvalins-claw,slime"
     },
     "xiao" : {
-        "ascension" : "vayuda-turquoise,hurricane-seed,qingxin,arrowhead",
-        "talents" : "prosperity,unknown,arrowhead"
+        "ascension" : "vayuda-turquoise,hurricane-seed,qingxin,slime",
+        "talents" : "prosperity,shadow-of-the-warrior,slime"
     },
     "xingqiu" : {
         "ascension" : "shivada-jade,cleansing-heart,silk-flower,mask",
