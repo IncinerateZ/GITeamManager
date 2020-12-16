@@ -7,6 +7,10 @@ const characters = {
         "ascension" : "agnidus-agate,everflame-seed,small-lamp-grass,arrowhead",
         "talents" : "freedom,dvalins-sigh,arrowhead"
     },
+    "ayaka" : {
+        "ascension" : "shivada-jade,hoarfrost-core,small-lamp-grass,scroll",
+        "talents" : "prosperity,ring-of-boreas,nectar"
+    },
     "barbara" : {
         "ascension" : "varunada-lazurite,cleansing-heart,philanemo-mushroom,scroll",
         "talents" : "freedom,ring-of-boreas,scroll"

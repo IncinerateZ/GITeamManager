@@ -1,5 +1,4 @@
 import calc from './calc.js';
-import rules from './rules.js';
 import materiallist from './materials.js';
 import wprarity from './wprarity.js';
 import analytics from './analytics.js';
