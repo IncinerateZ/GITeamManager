@@ -296,6 +296,7 @@ window.onload = function() {
     
     var characterlist = document.getElementsByClassName("character");
     var weapons = document.getElementById("weapon-bar");
+
     //load weapons
     for(let list in weaponlist) {
         for(let weapon in weaponlist[list]) {
