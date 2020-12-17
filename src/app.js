@@ -1,5 +1,4 @@
 import calc from './calc.js';
-import materiallist from './materials.js';
 import wprarity from './wprarity.js';
 import analytics from './analytics.js';
 
@@ -55,6 +54,14 @@ const polearmlist = ["beginners-protector", "black-tassel", /*"blackcliff-pole",
 const swordlist = ["aquila-favonia", /*"blackcliff-longsword",*/ "cool-steel", "dark-iron-sword", "dull-blade", "favonius-sword", "festering-desire", "fillet-blade", "harbinger-of-dawn", "iron-sting", "lions-roar", "prototype-rancour", /*"royal-longsword",*/ "sacrificial-sword", "silver-sword", "skyrider-sword", "skyward-blade", /*"the-alley-flash",*/ "the-black-sword", "the-flute", "travelers-handy-sword"];
 const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist];
 
+/*let r = "";
+for(let list of weaponlist) {
+    for(let w of list) {
+        r += w + ",";
+    }
+}
+console.log(r);*/
+
 /*
 UPCOMING WEAPONS
 
@@ -99,7 +106,7 @@ var weapname = "Alley Hunter";
 let j =
 "{}";
 
-var toJson = (s) => {
+/*var toJson = (s) => {
     let res = "{";
     let t = s.split(" ");
     let c = 1;
@@ -117,7 +124,7 @@ var toJson = (s) => {
     });
     res += "\n}"
     console.log(res);
-}
+}*/
 
 //toJson(j);
 //console.log(rules["temp"])
@@ -187,16 +194,16 @@ var getNewMargin = (width) => {
     return (100 - width) / 2;
 }
 
-var preloadImage = () => {
+/*var preloadImage = () => {
     for(let base in materiallist) {
         for(let n in materiallist[base]) {
             var img = new Image();
             img.src = './src/img/items/' + materiallist[base][n] + ".png";
         }
     }
-}
+}*/
 
-preloadImage();
+//preloadImage();
 
 var toggleTalents = (checked) => {
     if(checked) {
@@ -264,12 +271,12 @@ var forceAspectRatio = (img, type) => {
 var createCard = (name, amount, type) => {
     if(amount <= 0) return;
     let target = document.querySelector("#popup-content");
-    let imgsrc = "/src/img/items/" + name + ".png";
+    let imgsrc = "/src/img/webp-items/" + name + ".webp";
     let res = 
     "<div class='item-card " + type + "' id='" + name + "'>" +
         "<div class='card-main tooltip'>" +
             "<div class='img-box'>" +
-                "<img src='" + imgsrc + "' id='i-" + name + "'>" +
+                "<img src='" + imgsrc + "' alt='" + nameextract(name) + "' id='i-" + name + "'>" +
             "</div>" +
             "<span class='tooltiptext'>" + nameextract(name) + "</span>" +
         "</div>" +
@@ -292,7 +299,7 @@ window.onload = function() {
     //load weapons
     for(let list in weaponlist) {
         for(let weapon in weaponlist[list]) {
-            weapons.innerHTML += "<div class='icon weapons' id='" + weaponlist[list][weapon] + "'><img class='avatar weap' id='i-" + weaponlist[list][weapon] + "' src='src/img/weapons/" + weaponlist[list][weapon] + ".png'></div>"
+            weapons.innerHTML += "<div class='icon weapons' id='" + weaponlist[list][weapon] + "'><img class='avatar weap' id='i-" + weaponlist[list][weapon] + "' alt='" + nameextract(weaponlist[list][weapon]) + "' src='src/img/webp-weapons/" + weaponlist[list][weapon] + ".webp'></div>"
             if(weapselected === weaponlist[list][weapon]) {
                 var s = document.getElementById("i-" + weaponlist[list][weapon]);
                 s.style.border = "2px solid gold";
@@ -301,7 +308,7 @@ window.onload = function() {
     }
     //upcoming weapons
     for(let weapon in upcomingweapons) {
-        weapons.innerHTML += "<div class='icon grey' id='" + upcomingweapons[weapon] + "'><img class='avatar' id='i-" + upcomingweapons[weapon] + "' src='src/img/weapons/" + upcomingweapons[weapon] + ".png'></div>"
+        weapons.innerHTML += "<div class='icon grey' id='" + upcomingweapons[weapon] + "'><img class='avatar' id='i-" + upcomingweapons[weapon] + "' alt='" + nameextract(upcomingweapons[weapon]) + "' src='src/img/webp-weapons/" + upcomingweapons[weapon] + ".webp'></div>"
             if(weapselected === upcomingweapons[weapon]) {
                 var s = document.getElementById("i-" + upcomingweapons[weapon]);
                 s.style.border = "2px solid gold";
@@ -313,7 +320,7 @@ window.onload = function() {
         if(characterlist[char].id == null) break;
         var char = characterlist[char].id;
         var charicon = document.getElementById(char);
-        charicon.innerHTML = "<img class='avatar char' id='i-" + char + "' src='src/img/characters/gi-" + char + ".png'>";;
+        charicon.innerHTML = "<img class='avatar char' alt='" + char + "' id='i-" + char + "' src='src/img/webp-characters/gi-" + char + ".webp'>";;
         if(char === charselected) {
             var s = document.getElementById("i-" + char);
             s.style.border = "2px solid gold";
