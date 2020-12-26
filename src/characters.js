@@ -47,6 +47,10 @@ const characters = {
         "ascension" : "shivada-jade,hoarfrost-core,qingxin,nectar",
         "talents" : "diligence,shadow-of-the-warrior,nectar"
     },
+    "hutao" : {
+        "ascension" : "agnidus-agate,everflame-seed,silk-flower,nectar",
+        "talents" : "diligence,shard-of-a-foul-legacy,nectar"
+    },
     "jean" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,dandelion-seed,mask",
         "talents" : "resistance,dvalins-plume,mask"
