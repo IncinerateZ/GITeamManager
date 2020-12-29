@@ -48,7 +48,7 @@ const characters = {
         "talents" : "diligence,shadow-of-the-warrior,nectar"
     },
     "hutao" : {
-        "ascension" : "agnidus-agate,everflame-seed,silk-flower,nectar",
+        "ascension" : "agnidus-agate,juvenile-jade,silk-flower,nectar",
         "talents" : "diligence,shard-of-a-foul-legacy,nectar"
     },
     "jean" : {
@@ -104,7 +104,7 @@ const characters = {
         "talents" : "diligence,dvalins-claw,slime"
     },
     "xiao" : {
-        "ascension" : "vayuda-turquoise,hurricane-seed,qingxin,slime",
+        "ascension" : "vayuda-turquoise,juvenile-jade,qingxin,slime",
         "talents" : "prosperity,shadow-of-the-warrior,slime"
     },
     "xingqiu" : {
