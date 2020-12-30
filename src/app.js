@@ -52,7 +52,7 @@ const catalystlist = [/*"amber-catalyst",*/ "apprentices-notes", /*"blackcliff-a
 const greatswordlist = [/*"blackcliff-slasher",*/ "bloodtainted-greatsword", "debate-club", "favonius-greatsword", "ferrous-shadow", /*"lithic-blade"*/, "old-mercs-pal", "prototype-aminus", /*"quartz"*/, "rainslasher", "royal-greatsword", "sacrificial-greatsword", "serpent-spine", "skyrider-greatsword", "snow-tombed-starsilver", "skyward-pride", "the-bell", "the-unforged","waster-greatsword", "white-iron-greatsword", "whiteblind", "wolfs-gravestone"];
 const polearmlist = ["beginners-protector", "black-tassel", /*"blackcliff-pole",*/ "crescent-pike", "deathmatch", "dragons-bane", "dragonspine-spear","favonius-lance", "halberd", "iron-point", /*"kunwus-iris-rift", "lithic-spear",*/ "primordial-jade-winged-spear", "prototype-grudge", "skyward-spine", "vortex-vanquisher","white-tassel"];
 const swordlist = ["aquila-favonia", /*"blackcliff-longsword",*/ "cool-steel", "dark-iron-sword", "dull-blade", "favonius-sword", "festering-desire", "fillet-blade", "harbinger-of-dawn", "iron-sting", "lions-roar", "prototype-rancour", /*"royal-longsword",*/ "sacrificial-sword", "silver-sword", "skyrider-sword", "skyward-blade", "summit-shaper",/*"the-alley-flash",*/ "the-black-sword", "the-flute", "travelers-handy-sword"];
-const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist];
+const weaponlist = [bowlist, catalystlist, greatswordlist, polearmlist, swordlist]; 
 
 /*let r = "";
 for(let list of weaponlist) {
@@ -73,7 +73,7 @@ To release, remove below and uncomment above
 
 const upcomingweapons = [];
 
-const wpmax = [70, 70, 90 - 10, 90 - 10, 90];
+const wpmax = [70, 70, 90 - 10, 90, 90];
 
 var collapseToggle = false;
 var collapseText = {
