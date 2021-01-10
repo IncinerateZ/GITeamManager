@@ -2,7 +2,7 @@ import calc from './calc.js';
 import wprarity from './wprarity.js';
 import analytics from './analytics.js';
 
-analytics();
+//analytics();
 
 //xp to go to level N = levels[N] - levels[N-1]
 //mora cost = 5xp per mora
@@ -342,6 +342,7 @@ window.onload = function() {
     weapstart.addEventListener("keydown", (e) => forceNumFormat(e));
     weapend.addEventListener("keydown", (e) => forceNumFormat(e));
     startbtn.addEventListener("click", () => {
+        analytics();
         //clear collapse
         collapsed = null;
         collapseToggle = false;
