@@ -339,8 +339,9 @@ input[type="number"] {
 
 #weapon-bar {
   /*width: 550px;*/
-  width: 542px;
+  width: 545px;
   height: 488px;
+  overflow-y: scroll;
 }
 
 #weapon-bar::-webkit-scrollbar {
