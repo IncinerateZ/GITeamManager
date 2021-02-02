@@ -91,6 +91,10 @@ const characters = {
         "ascension" : "vajrada-amethyst,lightning-prism,wolfhook,mask",
         "talents" : "resistance,dvalins-claw,mask"
     },
+    "rosaria" : {
+        "ascension" : "shivada-jade,hoarfrost-core,valberry,insignia-2",
+        "talents" : "ballad,shadow-of-the-warrior,insignia-2"
+    },
     "sucrose" : {
         "ascension" : "vayuda-turquoise,hurricane-seed,windwheel-aster,nectar",
         "talents" : "freedom,spirit-locket-of-boreas,nectar"
