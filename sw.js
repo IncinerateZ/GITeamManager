@@ -10,11 +10,13 @@ self.addEventListener('install', event => {
                 return cache.addAll(resourcesToPrecache);
             })
     );
+    event.waitUntil(self.skipWaiting());
     caches.delete(prevcache);
 });
 
 self.addEventListener('activate', event => {
     console.log("activate event");
+    event.waitUntil(self.clients.claim());
 });
 
 self.addEventListener('fetch', event => {
