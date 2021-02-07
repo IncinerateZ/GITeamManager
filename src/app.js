@@ -18,7 +18,7 @@ const faqtitles = {
 const faqanswers = {
     0 : "Support for mobile devices are currently minimal",
     1 : "Numerical data are manually compiled from the official wiki, otherwise data regarding upcoming characters or weapons are taken from <a href='https://g-hhw.com' target='_blank' style='color:#555'>Honey Hunter World</a>.",
-    2 : "The Traveler is unique which will take some time to implement.",
+    2 : "I can't be bothered to and it will probably never be added.",
     3 : "As per (1), data is taken largely from the official wiki, so if no data is available for a certain character or weapon they cannot be calculated.",
     4 : "Most of the data is manually typed in to the local database and ruleset which may cause some errors during entry, I try my best to fix all the errors. If you spot any mistakes or have a suggestion, feel free to DM me on Discord at IncinerateZ#4038."
 }
