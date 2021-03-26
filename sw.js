@@ -1,4 +1,4 @@
-const cacheName = "cache-26032021-1";
+const cacheName = "cache-26032021-2";
 const resourcesToPrecache = [
 	"/src/img/webp-items/adventurers-experience.webp",
 	"/src/img/webp-items/agents-sacrificial-knife.webp",
@@ -239,6 +239,7 @@ const resourcesToPrecache = [
 	"/src/img/webp-weapons/slingshot.webp",
 	"/src/img/webp-weapons/snow-tombed-starsilver.webp",
 	"/src/img/webp-weapons/solar-pearl.webp",
+	"/src/img/webp-weapons/song-of-broken-pines.webp",
 	"/src/img/webp-weapons/staff-of-homa.webp",
 	"/src/img/webp-weapons/summit-shaper.webp",
 	"/src/img/webp-weapons/the-alley-flash.webp",
