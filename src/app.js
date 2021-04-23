@@ -534,7 +534,7 @@ window.onload = function () {
 	weapstart.addEventListener("keydown", (e) => forceNumFormat(e));
 	weapend.addEventListener("keydown", (e) => forceNumFormat(e));
 	startbtn.addEventListener("click", () => {
-		analytics();
+		analytics(charselected, charend.value, weapselected, weapend.value);
 		//clear collapse
 		collapsed = null;
 		collapseToggle = false;
