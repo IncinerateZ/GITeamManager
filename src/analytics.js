@@ -22,7 +22,7 @@ var a = async (char, charlvl, weap, weaplvl) => {
 	}
 
 	const res = await fetch(
-		`https://api.incin.tech/analytics?char=${char}&charl=${charlvl}&weap=${weap}&wpl=${wpl}`,
+		`https://api.incin.tech/analytics?char=${char}&charl=${charlvl}&weap=${weap}&wpl=${weaplvl}`,
 		{
 			method: "GET",
 			mode: "cors",

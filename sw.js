@@ -1,4 +1,4 @@
-const cacheName = "cache-23042021-1";
+const cacheName = "cache-23042021-2";
 const resourcesToPrecache = [
 	"/src/img/webp-items/adventurers-experience.webp",
 	"/src/img/webp-items/agents-sacrificial-knife.webp",
