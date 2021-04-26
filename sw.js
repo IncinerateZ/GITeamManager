@@ -1,4 +1,4 @@
-const cacheName = "cache-23042021-2";
+const cacheName = "cache-26042021-1";
 const resourcesToPrecache = [
 	"/src/img/webp-items/adventurers-experience.webp",
 	"/src/img/webp-items/agents-sacrificial-knife.webp",
@@ -52,6 +52,7 @@ const resourcesToPrecache = [
 	"/src/img/webp-items/fossilized-bone-shard.webp",
 	"/src/img/webp-items/fragile-bone-shard.webp",
 	"/src/img/webp-items/fragment-of-decarabians-epic.webp",
+	"/src/img/webp-items/gilded-scale.webp",
 	"/src/img/webp-items/glaze-lily.webp",
 	"/src/img/webp-items/golden-raven-insignia.webp",
 	"/src/img/webp-items/grain-of-aerosiderite.webp",
@@ -215,7 +216,7 @@ const resourcesToPrecache = [
 	"/src/img/webp-weapons/rainslasher.webp",
 	"/src/img/webp-weapons/raven-bow.webp",
 	"/src/img/webp-weapons/recurve-bow.webp",
-	"/src/img/webp-weapons/royal-bow.webp",
+	"/src/img/webp-weapons/royyal-bow.webp",
 	"/src/img/webp-weapons/royal-greatsword.webp",
 	"/src/img/webp-weapons/royal-grimoire.webp",
 	"/src/img/webp-weapons/royal-longsword.webp",
@@ -276,6 +277,7 @@ const resourcesToPrecache = [
 	"/src/img/webp-characters/gi-hutao.webp",
 	"/src/img/webp-characters/gi-jean.webp",
 	"/src/img/webp-characters/gi-kaeya.webp",
+	"/src/img/webp-characters/gi-kazuha.webp",
 	"/src/img/webp-characters/gi-keqing.webp",
 	"/src/img/webp-characters/gi-klee.webp",
 	"/src/img/webp-characters/gi-lisa.webp",
