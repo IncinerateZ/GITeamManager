@@ -66,6 +66,10 @@ const characters = {
 		ascension: "shivada-jade,hoarfrost-core,calla-lily,insignia-1",
 		talents: "ballad,spirit-locket-of-boreas,insignia-1",
 	},
+	kazuha: {
+		ascension: "vayuda-turquoise,maguu-kishin,sea-ganoderma,insignia-1",
+		talents: "diligence,gilded-scale,insignia-1",
+	},
 	keqing: {
 		ascension: "vajrada-amethyst,lightning-prism,cor-lapis,nectar",
 		talents: "prosperity,ring-of-boreas,nectar",

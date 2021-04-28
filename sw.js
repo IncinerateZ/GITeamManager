@@ -1,4 +1,4 @@
-const cacheName = "cache-26042021-1";
+const cacheName = "cache-28042021-1";
 const resourcesToPrecache = [
 	"/src/img/webp-items/adventurers-experience.webp",
 	"/src/img/webp-items/agents-sacrificial-knife.webp",
@@ -75,6 +75,7 @@ const resourcesToPrecache = [
 	"/src/img/webp-items/lightning-prism.webp",
 	"/src/img/webp-items/luminous-sands-from-guyun.webp",
 	"/src/img/webp-items/lustrous-stone-from-guyun.webp",
+	"/src/img/webp-items/maguu-kishin.webp",
 	"/src/img/webp-items/mist-grass-pollen.webp",
 	"/src/img/webp-items/mist-grass-wick.webp",
 	"/src/img/webp-items/mist-grass.webp",
@@ -103,6 +104,7 @@ const resourcesToPrecache = [
 	"/src/img/webp-items/relic-from-guyun.webp",
 	"/src/img/webp-items/ring-of-boreas.webp",
 	"/src/img/webp-items/scattered-piece-of-decarabians-dream.webp",
+	"/src/img/webp-items/sea-ganoderma.webp",
 	"/src/img/webp-items/sealed-scroll.webp",
 	"/src/img/webp-items/sergeants-insignia.webp",
 	"/src/img/webp-items/shackles-of-the-dandelion-gladiator.webp",
@@ -216,7 +218,7 @@ const resourcesToPrecache = [
 	"/src/img/webp-weapons/rainslasher.webp",
 	"/src/img/webp-weapons/raven-bow.webp",
 	"/src/img/webp-weapons/recurve-bow.webp",
-	"/src/img/webp-weapons/royyal-bow.webp",
+	"/src/img/webp-weapons/royal-bow.webp",
 	"/src/img/webp-weapons/royal-greatsword.webp",
 	"/src/img/webp-weapons/royal-grimoire.webp",
 	"/src/img/webp-weapons/royal-longsword.webp",
