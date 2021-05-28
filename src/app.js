@@ -74,6 +74,7 @@ const bowlist = [
     /*"ebony-bow",*/ 'favonius-warbow',
     'hunters-bow',
     'messenger',
+    'mitternachts-waltz',
     'prototype-crescent',
     'raven-bow',
     'recurve-bow',

@@ -7,6 +7,7 @@ const wprarity = {
     'favonius-warbow': 4,
     'hunters-bow': 1,
     messenger: 3,
+    'mitternachts-waltz': 4,
     'prototype-crescent': 4,
     'raven-bow': 3,
     'recurve-bow': 3,

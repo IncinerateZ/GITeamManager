@@ -1,4 +1,4 @@
-const cacheName = 'cache-28052021-1';
+const cacheName = 'cache-28052021-2';
 const resourcesToPrecache = [
     '/src/img/webp-items/adventurers-experience.webp',
     '/src/img/webp-items/agents-sacrificial-knife.webp',
@@ -189,6 +189,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/ferrous-shadow.webp',
     '/src/img/webp-weapons/festering-desire.webp',
     '/src/img/webp-weapons/fillet-blade.webp',
+    '/src/img/webp-weapons/freedom-sworn.webp',
     '/src/img/webp-weapons/frostbearer.webp',
     '/src/img/webp-weapons/halberd.webp',
     '/src/img/webp-weapons/harbinger-of-dawn.webp',
@@ -204,6 +205,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/mappa-mare.webp',
     '/src/img/webp-weapons/memory-of-dust.webp',
     '/src/img/webp-weapons/messenger.webp',
+    '/src/img/webp-weapons/mitternachts-waltz.webp',
     '/src/img/webp-weapons/old-mercs-pal.webp',
     '/src/img/webp-weapons/otherworldly-story.webp',
     '/src/img/webp-weapons/pocket-grimoire.webp',

@@ -7,6 +7,7 @@ const weapons = {
     'favonius-warbow': 'dandelion-gladiator,chaos,nectar',
     'hunters-bow': 'boreal-wolfs,ley-line,insignia-1',
     messenger: 'elixir,mist-grass,insignia-1',
+    'mitternachts-waltz': 'decarabian,horn,insignia-1',
     'prototype-crescent': 'elixir,mist-grass,insignia-1',
     'raven-bow': 'decarabian,horn,arrowhead',
     'recurve-bow': 'dandelion-gladiator,chaos,scroll',
