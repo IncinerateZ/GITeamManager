@@ -66,6 +66,43 @@ var showfaq = () => {
 
 showfaq();
 
+const charlist = [
+    'albedo',
+    'amber',
+    'ayaka',
+    'barbara',
+    'beidou',
+    'bennett',
+    'childe',
+    'chongyun',
+    'diluc',
+    'diona',
+    'eula',
+    'fischl',
+    'ganyu',
+    'hutao',
+    'jean',
+    'kaeya',
+    'kazuha',
+    'keqing',
+    'klee',
+    'lisa',
+    'mona',
+    'ningguang',
+    'noelle',
+    'qiqi',
+    'razor',
+    'rosaria',
+    'sucrose',
+    'venti',
+    'xiangling',
+    'xiao',
+    'xingqiu',
+    'xinyan',
+    'yanfei',
+    'zhongli',
+];
+
 const bowlist = [
     'alley-hunter',
     'amos-bow',
@@ -506,23 +543,15 @@ window.onload = function () {
     }
 
     //load characters
-    for (var char in characterlist) {
-        if (characterlist[char].id == null) break;
-        var char = characterlist[char].id;
-        var charicon = document.getElementById(char);
-        charicon.innerHTML =
-            "<img class='avatar char' alt='" +
-            char +
-            "' id='i-" +
-            char +
-            "' src='src/img/webp-characters/gi-" +
-            char +
-            ".webp'>";
-        if (char === charselected) {
-            var s = document.getElementById('i-' + char);
-            s.style.border = '2px solid gold';
-        }
+    for (let c of charlist) {
+        let elem = `<div class="icon character" id=${c}><img class='avatar char' alt=${c} id="i-${c}" src="src/img/webp-characters/gi-${c}.webp"></div>`;
+        let parent = document.getElementById('character-bar');
+        parent.innerHTML += elem;
     }
+
+    var s = document.getElementById('i-' + charselected);
+    s.style.border = '2px solid gold';
+
     //load settings
     charstart = document.querySelector('#char-start');
     charend = document.querySelector('#char-end');
