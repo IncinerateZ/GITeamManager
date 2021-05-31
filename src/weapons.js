@@ -24,6 +24,7 @@ const weapons = {
     //"amber-catalyst" : "unknown,unknown,unknown",
     'apprentices-notes': 'decarabian,horn,mask',
     'blackcliff-agate': 'guyun,knife,scroll',
+    'dodoco-tales': 'boreal-wolfs,ley-line,mask',
     'emerald-orb': 'guyun,knife,insignia-1',
     'eye-of-perception': 'elixir,mist-grass,mask',
     'favonius-codex': 'decarabian,horn,scroll',

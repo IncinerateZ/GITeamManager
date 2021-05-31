@@ -1,4 +1,4 @@
-const cacheName = 'cache-31052021-1';
+const cacheName = 'cache-31052021-2';
 const resourcesToPrecache = [
     '/src/img/webp-items/adventurers-experience.webp',
     '/src/img/webp-items/agents-sacrificial-knife.webp',
@@ -175,6 +175,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/dark-iron-sword.webp',
     '/src/img/webp-weapons/deathmatch.webp',
     '/src/img/webp-weapons/debate-club.webp',
+    '/src/img/webp-weapons/dodoco-tales.webp',
     '/src/img/webp-weapons/dragons-bane.webp',
     '/src/img/webp-weapons/dragonspine-spear.webp',
     '/src/img/webp-weapons/dull-blade.webp',

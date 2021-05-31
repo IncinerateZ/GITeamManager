@@ -24,6 +24,7 @@ const wprarity = {
     //"amber-catalyst" : 3,
     'apprentices-notes': 1,
     'blackcliff-agate': 4,
+    'dodoco-tales': 4,
     'emerald-orb': 3,
     'eye-of-perception': 4,
     'favonius-codex': 4,

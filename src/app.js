@@ -129,6 +129,7 @@ const bowlist = [
 const catalystlist = [
     /*"amber-catalyst",*/ 'apprentices-notes',
     'blackcliff-agate',
+    'dodoco-tales',
     'emerald-orb',
     'eye-of-perception',
     'favonius-codex',
