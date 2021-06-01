@@ -66,10 +66,12 @@ var showfaq = () => {
 
 showfaq();
 
+const charlist_beta = ['ayaka'];
+
 const charlist = [
     'albedo',
     'amber',
-    'ayaka',
+    /*'ayaka',*/
     'barbara',
     'beidou',
     'bennett',
@@ -546,6 +548,12 @@ window.onload = function () {
     //load characters
     for (let c of charlist) {
         let elem = `<div class="icon character" id=${c}><img class='avatar char' alt=${c} id="i-${c}" src="src/img/webp-characters/gi-${c}.webp"></div>`;
+        let parent = document.getElementById('character-bar');
+        parent.innerHTML += elem;
+    }
+
+    for (let c of charlist_beta) {
+        let elem = `<div class="icon grey" id=${c}><img class='avatar' alt=${c} id="i-${c}" src="src/img/webp-characters/gi-${c}.webp"></div>`;
         let parent = document.getElementById('character-bar');
         parent.innerHTML += elem;
     }
