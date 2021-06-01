@@ -110,6 +110,7 @@ const bowlist = [
     'amos-bow',
     'blackcliff-warbow',
     'compound-bow',
+    'elegy-for-the-end',
     /*"ebony-bow",*/ 'favonius-warbow',
     'hunters-bow',
     'messenger',
@@ -121,12 +122,12 @@ const bowlist = [
     'rust',
     'sacrificial-bow',
     'seasoned-hunters-bow',
-    'serene-requiem',
     'sharpshooters-oath',
     'skyward-harp',
     'slingshot',
     'the-stringless',
     'the-viridescent-hunt',
+    'windblume-ode',
 ];
 const catalystlist = [
     /*"amber-catalyst",*/ 'apprentices-notes',
