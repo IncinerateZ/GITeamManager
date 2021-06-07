@@ -1,4 +1,4 @@
-const cacheName = 'cache-07062021-1';
+const cacheName = 'cache-07062021-2';
 const resourcesToPrecache = [
     '/src/img/webp-items/adventurers-experience.webp',
     '/src/img/webp-items/agents-sacrificial-knife.webp',
@@ -293,7 +293,9 @@ const resourcesToPrecache = [
     '/src/img/webp-characters/gi-qiqi.webp',
     '/src/img/webp-characters/gi-razor.webp',
     '/src/img/webp-characters/gi-rosaria.webp',
+    '/src/img/webp-characters/gi-sayu.webp',
     '/src/img/webp-characters/gi-sucrose.webp',
+    '/src/img/webp-characters/gi-tohma.webp',
     '/src/img/webp-characters/gi-traveler.webp',
     '/src/img/webp-characters/gi-venti.webp',
     '/src/img/webp-characters/gi-xiangling.webp',

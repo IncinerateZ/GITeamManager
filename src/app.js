@@ -67,7 +67,7 @@ var showfaq = () => {
 
 showfaq();
 
-const charlist_beta = ['ayaka', 'yoimiya'];
+const charlist_beta = ['ayaka', 'yoimiya', 'sayu', 'tohma'];
 
 const charlist = [
     'albedo',
