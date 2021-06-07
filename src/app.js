@@ -1,6 +1,7 @@
 import calc from './calc.js';
 import wprarity from './wprarity.js';
 import analytics from './analytics.js';
+import clist from '../src/characters.js';
 
 //analytics();
 
@@ -66,7 +67,7 @@ var showfaq = () => {
 
 showfaq();
 
-const charlist_beta = ['ayaka'];
+const charlist_beta = ['ayaka', 'yoimiya'];
 
 const charlist = [
     'albedo',
@@ -95,13 +96,16 @@ const charlist = [
     'qiqi',
     'razor',
     'rosaria',
+    'sayu',
     'sucrose',
+    'tohma',
     'venti',
     'xiangling',
     'xiao',
     'xingqiu',
     'xinyan',
     'yanfei',
+    'yoimiya',
     'zhongli',
 ];
 
@@ -548,6 +552,8 @@ window.onload = function () {
 
     //load characters
     for (let c of charlist) {
+        console.log(c);
+        if (!clist[c]) continue;
         let elem = `<div class="icon character" id=${c}><img class='avatar char' alt=${c} id="i-${c}" src="src/img/webp-characters/gi-${c}.webp"></div>`;
         let parent = document.getElementById('character-bar');
         parent.innerHTML += elem;

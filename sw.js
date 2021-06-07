@@ -301,6 +301,7 @@ const resourcesToPrecache = [
     '/src/img/webp-characters/gi-xingqiu.webp',
     '/src/img/webp-characters/gi-xinyan.webp',
     '/src/img/webp-characters/gi-yanfei.webp',
+    '/src/img/webp-characters/gi-yoimiya.webp',
     '/src/img/webp-characters/gi-zhongli.webp',
     '/src/img/favicomatic/apple-touch-icon-114x114.png',
     '/src/img/favicomatic/apple-touch-icon-120x120.png',
