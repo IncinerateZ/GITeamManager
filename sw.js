@@ -75,7 +75,7 @@ const resourcesToPrecache = [
     '/src/img/webp-items/lightning-prism.webp',
     '/src/img/webp-items/luminous-sands-from-guyun.webp',
     '/src/img/webp-items/lustrous-stone-from-guyun.webp',
-    '/src/img/webp-items/maguu-kishin.webp',
+    '/src/img/webp-items/marionette-core.webp',
     '/src/img/webp-items/mist-grass-pollen.webp',
     '/src/img/webp-items/mist-grass-wick.webp',
     '/src/img/webp-items/mist-grass.webp',
