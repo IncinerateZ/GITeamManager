@@ -8,8 +8,8 @@ const characters = {
         talents: 'freedom,dvalins-sigh,arrowhead',
     },
     ayaka: {
-        ascension: 'shivada-jade,hoarfrost-core,small-lamp-grass,scroll',
-        talents: 'prosperity,ring-of-boreas,nectar',
+        ascension: 'shivada-jade,perpetual-heart,sakura-bloom,handguard',
+        talents: 'elegance,bloodjade-branch,handguard',
     },
     barbara: {
         ascension:
@@ -107,6 +107,10 @@ const characters = {
         ascension: 'shivada-jade,hoarfrost-core,valberry,insignia-2',
         talents: 'ballad,shadow-of-the-warrior,insignia-2',
     },
+    sayu: {
+        ascension: 'vayuda-turquoise,marionette-core,crystal-marrow,nectar',
+        talents: 'light,gilded-scale,nectar',
+    },
     sucrose: {
         ascension: 'vayuda-turquoise,hurricane-seed,windwheel-aster,nectar',
         talents: 'freedom,spirit-locket-of-boreas,nectar',
@@ -134,6 +138,10 @@ const characters = {
     yanfei: {
         ascension: 'agnidus-agate,juvenile-jade,noctilucous-jade,insignia-1',
         talents: 'gold,bloodjade-branch,insignia-1',
+    },
+    yoimiya: {
+        ascension: 'agnidus-agate,smoldering-pearl,naku-weed,scroll',
+        talents: 'transience,dragon-lords-crown,scroll',
     },
     zhongli: {
         ascension: 'prithiva-topaz,basalt-pillar,cor-lapis,slime',
