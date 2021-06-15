@@ -109,6 +109,11 @@ const wprarity = {
     'the-black-sword': 4,
     'the-flute': 4,
     'travelers-handy-sword': 3,
+    'amenoma-kageuta-blade': 4,
+    'katsuragis-slasher': 4,
+    'kitain-cross-spear': 4,
+    'demon-slayer-bow': 4,
+    'white-dragon-ring': 4,
 };
 
 export default wprarity;
