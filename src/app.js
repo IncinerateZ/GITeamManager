@@ -557,7 +557,6 @@ window.onload = function () {
 
     //load characters
     for (let c of charlist) {
-        console.log(c);
         if (!clist[c]) continue;
         let elem = `<div class="icon character" id=${c}><img class='avatar char' alt=${c} id="i-${c}" src="src/img/webp-characters/gi-${c}.webp"></div>`;
         let parent = document.getElementById('character-bar');
