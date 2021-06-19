@@ -42,7 +42,7 @@ var showfaq = () => {
         console.log(document.cookie.lastpoll);
         target.innerHTML += `<div id='faq-text'>
                             <div id='faq-title'> POLL </div>
-                            <div class='faq-t' style="text-align: center"> Should 3* weapons be removed? </div>
+                            <div class='faq-t' style="text-align: center"> Should under 4* weapons be removed? </div>
                             <div class="faq-button" id="yes">Yes</div> 
                             <div class="faq-button" id="no">No</div>
                         </div>`;
