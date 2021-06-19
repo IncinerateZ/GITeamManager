@@ -648,22 +648,24 @@ window.onload = function () {
         document.querySelector('#popup-container').style.visibility = 'visible';
     });
 
-    document.querySelector('#yes').addEventListener('click', () => {
-        document.cookie = `lastpoll=${pollid}`;
-        fetch(`https://api.incin.tech/gipolls?response=yes`, {
-            method: 'GET',
-            mode: 'cors',
+    if (document.querySelector('#yes') && document.querySelector('#no')) {
+        document.querySelector('#yes').addEventListener('click', () => {
+            document.cookie = `lastpoll=${pollid}`;
+            fetch(`https://api.incin.tech/gipolls?response=yes`, {
+                method: 'GET',
+                mode: 'cors',
+            });
+            showfaq();
         });
-        showfaq();
-    });
-    document.querySelector('#no').addEventListener('click', () => {
-        document.cookie = `lastpoll=${pollid}`;
-        fetch(`https://api.incin.tech/gipolls?response=no`, {
-            method: 'GET',
-            mode: 'cors',
+        document.querySelector('#no').addEventListener('click', () => {
+            document.cookie = `lastpoll=${pollid}`;
+            fetch(`https://api.incin.tech/gipolls?response=no`, {
+                method: 'GET',
+                mode: 'cors',
+            });
+            showfaq();
         });
-        showfaq();
-    });
+    }
 
     document.addEventListener('click', (e) => {
         forceInRange();
