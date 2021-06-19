@@ -650,7 +650,7 @@ window.onload = function () {
 
     document.querySelector('#yes').addEventListener('click', () => {
         document.cookie = `lastpoll=${pollid}`;
-        fetch(`https://api.incin.tech/gi?response=yes`, {
+        fetch(`https://api.incin.tech/gipolls?response=yes`, {
             method: 'GET',
             mode: 'cors',
         });
