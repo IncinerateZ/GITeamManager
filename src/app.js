@@ -650,7 +650,7 @@ window.onload = function () {
 
     document.querySelector('#yes').addEventListener('click', () => {
         document.cookie = `lastpoll=${pollid}`;
-        fetch(`https://api.incin.tech/genshinpolls?response=yes`, {
+        fetch(`https://api.incin.tech/gi?response=yes`, {
             method: 'GET',
             mode: 'cors',
         });
@@ -658,7 +658,7 @@ window.onload = function () {
     });
     document.querySelector('#no').addEventListener('click', () => {
         document.cookie = `lastpoll=${pollid}`;
-        fetch(`https://api.incin.tech/genshinpolls?response=no  `, {
+        fetch(`https://api.incin.tech/gipolls?response=no`, {
             method: 'GET',
             mode: 'cors',
         });
