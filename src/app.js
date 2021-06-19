@@ -8,6 +8,12 @@ import clist from '../src/characters.js';
 //xp to go to level N = levels[N] - levels[N-1]
 //mora cost = 5xp per mora
 
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
 const faqtitles = {
     0: 'Is There Mobile Support?',
     1: 'Where did you get the data?',
@@ -24,10 +30,23 @@ const faqanswers = {
     4: 'Most of the data is manually typed in to the local database and ruleset which may cause some errors during entry, I try my best to fix all the errors. If you spot any mistakes or have a suggestion, feel free to DM me on Discord at IncinerateZ#4038.',
 };
 
+const pollid = 0;
+
 var showfaq = () => {
     let popup = document.querySelector('#popup-container');
     popup.style.visibility = 'visible';
     let target = document.querySelector('#popup-content');
+    target.innerHTML = ``;
+    // Polls
+    if (getCookie('lastpoll') != pollid) {
+        console.log(document.cookie.lastpoll);
+        target.innerHTML += `<div id='faq-text'>
+                            <div id='faq-title'> POLL </div>
+                            <div class='faq-t' style="text-align: center"> Should 3* weapons be removed? </div>
+                            <div class="faq-button" id="yes">Yes</div> 
+                            <div class="faq-button" id="no">No</div>
+                        </div>`;
+    }
 
     target.innerHTML +=
         "<div id='faq-text'>" +
@@ -627,6 +646,23 @@ window.onload = function () {
         sortCards();
 
         document.querySelector('#popup-container').style.visibility = 'visible';
+    });
+
+    document.querySelector('#yes').addEventListener('click', () => {
+        document.cookie = `lastpoll=${pollid}`;
+        fetch(`https://api.incin.tech/genshinpolls?response=yes`, {
+            method: 'GET',
+            mode: 'cors',
+        });
+        showfaq();
+    });
+    document.querySelector('#no').addEventListener('click', () => {
+        document.cookie = `lastpoll=${pollid}`;
+        fetch(`https://api.incin.tech/genshinpolls?response=no  `, {
+            method: 'GET',
+            mode: 'cors',
+        });
+        showfaq();
     });
 
     document.addEventListener('click', (e) => {
