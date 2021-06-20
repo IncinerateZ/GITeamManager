@@ -8,12 +8,6 @@ import clist from '../src/characters.js';
 //xp to go to level N = levels[N] - levels[N-1]
 //mora cost = 5xp per mora
 
-function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-}
-
 const faqtitles = {
     0: 'Is There Mobile Support?',
     1: 'Where did you get the data?',
@@ -37,9 +31,9 @@ var showfaq = () => {
     popup.style.visibility = 'visible';
     let target = document.querySelector('#popup-content');
     target.innerHTML = ``;
+
     // Polls
-    if (getCookie('lastpoll') != pollid) {
-        console.log(document.cookie.lastpoll);
+    if (localStorage.getItem('lastpoll') != pollid) {
         target.innerHTML += `<div id='faq-text'>
                             <div id='faq-title'> POLL </div>
                             <div class='faq-t' style="text-align: center"> Should under 4* weapons be removed? </div>
@@ -650,7 +644,7 @@ window.onload = function () {
 
     if (document.querySelector('#yes') && document.querySelector('#no')) {
         document.querySelector('#yes').addEventListener('click', () => {
-            document.cookie = `lastpoll=${pollid}`;
+            localStorage.setItem(lastpoll, pollid);
             fetch(`https://api.incin.tech/gipolls?response=yes`, {
                 method: 'GET',
                 mode: 'cors',
@@ -658,7 +652,7 @@ window.onload = function () {
             showfaq();
         });
         document.querySelector('#no').addEventListener('click', () => {
-            document.cookie = `lastpoll=${pollid}`;
+            localStorage.setItem(lastpoll, pollid);
             fetch(`https://api.incin.tech/gipolls?response=no`, {
                 method: 'GET',
                 mode: 'cors',
