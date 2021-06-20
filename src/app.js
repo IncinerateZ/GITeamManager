@@ -645,7 +645,7 @@ window.onload = function () {
     if (document.querySelector('#yes') && document.querySelector('#no')) {
         document.querySelector('#yes').addEventListener('click', () => {
             localStorage.setItem('lastpoll', pollid);
-            fetch(`https://api.incin.tech/gipolls?response=yes`, {
+            fetch(`https://api.incin.tech/gipolls?response=yes&id=${pollid}`, {
                 method: 'GET',
                 mode: 'cors',
             });
@@ -653,7 +653,7 @@ window.onload = function () {
         });
         document.querySelector('#no').addEventListener('click', () => {
             localStorage.setItem('lastpoll', pollid);
-            fetch(`https://api.incin.tech/gipolls?response=no`, {
+            fetch(`https://api.incin.tech/gipolls?response=no&id=${pollid}`, {
                 method: 'GET',
                 mode: 'cors',
             });
