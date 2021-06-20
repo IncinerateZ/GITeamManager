@@ -645,18 +645,24 @@ window.onload = function () {
     if (document.querySelector('#yes') && document.querySelector('#no')) {
         document.querySelector('#yes').addEventListener('click', () => {
             localStorage.setItem('lastpoll', pollid);
-            fetch(`https://api.incin.tech/gipolls?response=yes&id=${pollid}`, {
-                method: 'GET',
-                mode: 'cors',
-            });
+            fetch(
+                `https://api.incin.tech/genshinpolls?response=yes&id=${pollid}`,
+                {
+                    method: 'GET',
+                    mode: 'cors',
+                },
+            );
             showfaq();
         });
         document.querySelector('#no').addEventListener('click', () => {
             localStorage.setItem('lastpoll', pollid);
-            fetch(`https://api.incin.tech/gipolls?response=no&id=${pollid}`, {
-                method: 'GET',
-                mode: 'cors',
-            });
+            fetch(
+                `https://api.incin.tech/genshinpolls?response=no&id=${pollid}`,
+                {
+                    method: 'GET',
+                    mode: 'cors',
+                },
+            );
             showfaq();
         });
     }
