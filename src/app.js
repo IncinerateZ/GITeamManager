@@ -32,8 +32,10 @@ var showfaq = () => {
     let target = document.querySelector('#popup-content');
     target.innerHTML = ``;
 
+    const dopoll = false;
+
     // Polls
-    if (localStorage.getItem('lastpoll') != pollid) {
+    if (dopoll && localStorage.getItem('lastpoll') != pollid) {
         target.innerHTML += `<div id='faq-text'>
                             <div id='faq-title'> POLL </div>
                             <div class='faq-t' style="text-align: center"> Should under 4* weapons be removed? </div>
