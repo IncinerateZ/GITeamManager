@@ -129,7 +129,7 @@ const bowlist = [
     'amos-bow',
     'blackcliff-warbow',
     'compound-bow',
-    'demon-slayer-bow',
+    'hamayumi',
     'elegy-for-the-end',
     /*"ebony-bow",*/ 'favonius-warbow',
     'hunters-bow',
@@ -147,6 +147,7 @@ const bowlist = [
     'slingshot',
     'the-stringless',
     'the-viridescent-hunt',
+    'thundering-pulse',
     'windblume-ode',
 ];
 const catalystlist = [
@@ -171,7 +172,7 @@ const catalystlist = [
     'the-widsith',
     'thrilling-tales-of-dragon-slayers',
     'twin-nephrite',
-    'white-dragon-ring',
+    'hakushin-ring',
     'wine-and-song',
 ];
 const greatswordlist = [
@@ -180,7 +181,7 @@ const greatswordlist = [
     'debate-club',
     'favonius-greatsword',
     'ferrous-shadow',
-    'katsuragis-slasher',
+    'katsuragikiri-nagamasa',
     'lithic-blade',
     'old-mercs-pal',
     'prototype-aminus' /*"quartz"*/,
@@ -220,7 +221,7 @@ const polearmlist = [
     'white-tassel',
 ];
 const swordlist = [
-    'amenoma-kageuta-blade',
+    'amenoma-kageuchi',
     'aquila-favonia',
     'blackcliff-longsword',
     'cool-steel',
@@ -233,6 +234,7 @@ const swordlist = [
     'harbinger-of-dawn',
     'iron-sting',
     'lions-roar',
+    'mistsplitter-reforged',
     'primordial-jade-cutter',
     'prototype-rancour',
     'royal-longsword',

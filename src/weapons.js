@@ -110,11 +110,13 @@ const weapons = {
     'the-black-sword': 'boreal-wolfs,ley-line,slime',
     'the-flute': 'boreal-wolfs,ley-line,slime',
     'travelers-handy-sword': 'dandelion-gladiator,chaos,scroll',
-    'amenoma-kageuta-blade': 'outer-sea,chaos-2,handguard',
-    'katsuragis-slasher': 'narukamis,chaos-2,handguard',
+    'amenoma-kageuchi': 'outer-sea,chaos-2,handguard',
+    'katsuragikiri-nagamasa': 'narukamis,chaos-2,handguard',
     'kitain-cross-spear': 'mask-2,chaos-2,insignia-1',
-    'demon-slayer-bow': 'narukamis,prism,arrowhead',
-    'white-dragon-ring': 'outer-sea,prism,scroll',
+    hamayumi: 'narukamis,prism,arrowhead',
+    'hakushin-ring': 'outer-sea,prism,scroll',
+    'mistsplitter-reforged': 'outer-sea,chaos-2,handguard',
+    'thundering-pulse': 'narukamis,prism,arrowhead',
     null: 0,
 };
 

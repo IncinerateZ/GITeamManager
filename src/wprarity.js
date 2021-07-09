@@ -109,11 +109,13 @@ const wprarity = {
     'the-black-sword': 4,
     'the-flute': 4,
     'travelers-handy-sword': 3,
-    'amenoma-kageuta-blade': 4,
-    'katsuragis-slasher': 4,
+    'amenoma-kageuchi': 4,
+    'katsuragikiri-nagamasa': 4,
     'kitain-cross-spear': 4,
-    'demon-slayer-bow': 4,
-    'white-dragon-ring': 4,
+    hamayumi: 4,
+    'hakushin-ring': 4,
+    'mistsplitter-reforged': 5,
+    'thundering-pulse': 5,
 };
 
 export default wprarity;
