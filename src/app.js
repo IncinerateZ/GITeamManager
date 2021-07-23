@@ -82,7 +82,7 @@ var showfaq = () => {
 
 showfaq();
 
-const charlist_beta = ['tohma'];
+const charlist_beta = ['aloy', 'raiden', 'kokomi', 'thoma'];
 
 const charlist = [
     'albedo',
