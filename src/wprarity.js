@@ -116,6 +116,11 @@ const wprarity = {
     'hakushin-ring': 4,
     'mistsplitter-reforged': 5,
     'thundering-pulse': 5,
+    'luxurious-sea-lord': 4,
+    'the-catch': 4,
+    predator: 4,
+    'grasscutters-light': 5,
+    'diamond-visage': 5,
 };
 
 export default wprarity;

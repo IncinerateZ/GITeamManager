@@ -1,4 +1,4 @@
-const cacheName = 'cache-24072021-1';
+const cacheName = 'cache-24072021-2';
 const resourcesToPrecache = [
     '/src/img/webp-items/480.webp',
     '/src/img/webp-items/481.webp',
@@ -221,6 +221,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/dark-iron-sword.webp',
     '/src/img/webp-weapons/deathmatch.webp',
     '/src/img/webp-weapons/debate-club.webp',
+    '/src/img/webp-weapons/diamond-visage.webp',
     '/src/img/webp-weapons/dodoco-tales.webp',
     '/src/img/webp-weapons/dragons-bane.webp',
     '/src/img/webp-weapons/dragonspine-spear.webp',
@@ -239,6 +240,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/fillet-blade.webp',
     '/src/img/webp-weapons/freedom-sworn.webp',
     '/src/img/webp-weapons/frostbearer.webp',
+    '/src/img/webp-weapons/grasscutters-light.webp',
     '/src/img/webp-weapons/hakushin-ring.webp',
     '/src/img/webp-weapons/halberd.webp',
     '/src/img/webp-weapons/hamayumi.webp',
@@ -253,6 +255,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/lithic-blade.webp',
     '/src/img/webp-weapons/lithic-spear.webp',
     '/src/img/webp-weapons/lost-prayer-to-the-sacred-winds.webp',
+    '/src/img/webp-weapons/luxurious-sea-lord.webp',
     '/src/img/webp-weapons/magic-guide.webp',
     '/src/img/webp-weapons/mappa-mare.webp',
     '/src/img/webp-weapons/memory-of-dust.webp',
@@ -262,6 +265,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/old-mercs-pal.webp',
     '/src/img/webp-weapons/otherworldly-story.webp',
     '/src/img/webp-weapons/pocket-grimoire.webp',
+    '/src/img/webp-weapons/predator.webp',
     '/src/img/webp-weapons/primordial-jade-cutter.webp',
     '/src/img/webp-weapons/primordial-jade-winged-spear.webp',
     '/src/img/webp-weapons/prototype-aminus.webp',
@@ -302,6 +306,7 @@ const resourcesToPrecache = [
     '/src/img/webp-weapons/the-alley-flash.webp',
     '/src/img/webp-weapons/the-bell.webp',
     '/src/img/webp-weapons/the-black-sword.webp',
+    '/src/img/webp-weapons/the-catch.webp',
     '/src/img/webp-weapons/the-flute.webp',
     '/src/img/webp-weapons/the-stringless.webp',
     '/src/img/webp-weapons/the-unforged.webp',
