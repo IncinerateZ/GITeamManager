@@ -85,9 +85,8 @@ showfaq();
 const charlist_beta = ['thoma'];
 
 const charlist = [
-    'aloy',
-    'thoma',
     'albedo',
+    'aloy',
     'amber',
     'ayaka',
     'barbara',
