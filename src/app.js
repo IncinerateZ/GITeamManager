@@ -82,9 +82,11 @@ var showfaq = () => {
 
 showfaq();
 
-const charlist_beta = ['aloy', 'kokomi', 'raiden', 'sara', 'thoma'];
+const charlist_beta = ['thoma'];
 
 const charlist = [
+    'aloy',
+    'thoma',
     'albedo',
     'amber',
     'ayaka',
@@ -104,13 +106,16 @@ const charlist = [
     'kazuha',
     'keqing',
     'klee',
+    'kokomi',
     'lisa',
     'mona',
     'ningguang',
     'noelle',
     'qiqi',
+    'raiden',
     'razor',
     'rosaria',
+    'sara',
     'sayu',
     'sucrose',
     'tohma',

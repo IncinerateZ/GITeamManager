@@ -147,6 +147,22 @@ const characters = {
         ascension: 'prithiva-topaz,basalt-pillar,cor-lapis,slime',
         talents: 'gold,tusk-of-monoceros-caeli,slime',
     },
+    raiden: {
+        ascension: 'vajrada-amethyst,storm-bead,tenkumo-fruit,handguard',
+        talents: 'light,480,handguard',
+    },
+    kokomi: {
+        ascension: 'varunada-lazurite,dew-of-repudiation,pearl,spectral',
+        talents: 'transience,481,spectral',
+    },
+    sara: {
+        ascension: 'vajrada-amethyst,storm-bead,dendrobium,mask',
+        talents: 'elegance,482,mask',
+    },
+    aloy: {
+        ascension: 'shivada-jade,crystalline-bloom,crystal-marrow,spectral',
+        talents: 'freedom,480,spectral',
+    },
 };
 
 export default characters;

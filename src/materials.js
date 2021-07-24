@@ -213,11 +213,16 @@ const materials = {
         4: 'narukamis-affection',
         5: 'narukamis-valor',
     },
-    "outer-sea": {
+    'outer-sea': {
         2: 'outer-sea-coral-branch',
         3: 'outer-sea-jeweled-branch',
         4: 'outer-sea-jade-branch',
         5: 'outer-sea-gold-branch',
+    },
+    spectral: {
+        2: 'spectral-husk',
+        3: 'spectral-heart',
+        4: 'spectral-nucleus',
     },
     unknown: {
         0: 'unknown-weekly-material',
