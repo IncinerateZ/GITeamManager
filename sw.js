@@ -1,4 +1,4 @@
-const cacheName = 'cache-24072021-2';
+const cacheName = 'cache-30072021-0';
 const resourcesToPrecache = [
     '/src/img/webp-items/480.webp',
     '/src/img/webp-items/481.webp',
@@ -43,6 +43,7 @@ const resourcesToPrecache = [
     '/src/img/webp-items/dead-ley-line-branch.webp',
     '/src/img/webp-items/dead-ley-line-leaves.webp',
     '/src/img/webp-items/debris-of-decarabians-city.webp',
+    '/src/img/webp-items/dendrobium.webp',
     '/src/img/webp-items/dew-of-repudiation.webp',
     '/src/img/webp-items/dismal-prism.webp',
     '/src/img/webp-items/divine-body-from-guyun.webp',
