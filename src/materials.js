@@ -64,7 +64,7 @@ const materials = {
         2: 'mask-of-the-wicked-lieutenant',
         3: 'mask-of-the-tigers-bite',
         4: 'mask-of-the-one-horned',
-        4: 'mask-of-the-kijin',
+        5: 'mask-of-the-kijin',
     },
     'ley-line': {
         2: 'dead-ley-line-branch',
