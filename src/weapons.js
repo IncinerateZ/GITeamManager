@@ -120,7 +120,7 @@ const weapons = {
     'luxurious-sea-lord': 'aerosiderite,bone-shard,slime',
     'the-catch': 'mask-2,chaos-2,spectral',
     predator: 'narukamis,prism,arrowhead',
-    'grasscutters-light': 'mask-2,chaos-2,handguard',
+    'engulfing-lightning': 'mask-2,chaos-2,handguard',
     'diamond-visage': 'outer-sea,prism,spectral',
     null: 0,
 };

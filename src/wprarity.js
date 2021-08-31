@@ -119,7 +119,7 @@ const wprarity = {
     'luxurious-sea-lord': 4,
     'the-catch': 4,
     predator: 4,
-    'grasscutters-light': 5,
+    'engulfing-lightning': 5,
     'diamond-visage': 5,
 };
 
