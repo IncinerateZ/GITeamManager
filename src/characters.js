@@ -149,19 +149,19 @@ const characters = {
     },
     raiden: {
         ascension: 'vajrada-amethyst,storm-bead,tenkumo-fruit,handguard',
-        talents: 'light,480,handguard',
+        talents: 'light,molten-moment,handguard',
     },
     kokomi: {
         ascension: 'varunada-lazurite,dew-of-repudiation,pearl,spectral',
-        talents: 'transience,481,spectral',
+        talents: 'transience,hellfire-butterfly,spectral',
     },
     sara: {
         ascension: 'vajrada-amethyst,storm-bead,dendrobium,mask',
-        talents: 'elegance,482,mask',
+        talents: 'elegance,ashen-heart,mask',
     },
     aloy: {
         ascension: 'shivada-jade,crystalline-bloom,crystal-marrow,spectral',
-        talents: 'freedom,480,spectral',
+        talents: 'freedom,molten-moment,spectral',
     },
 };
 

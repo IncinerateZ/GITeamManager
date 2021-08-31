@@ -1,14 +1,12 @@
-const cacheName = 'cache-30072021-0';
+const cacheName = 'cache-31082021-0';
 const resourcesToPrecache = [
-    '/src/img/webp-items/480.webp',
-    '/src/img/webp-items/481.webp',
-    '/src/img/webp-items/482.webp',
     '/src/img/webp-items/adventurers-experience.webp',
     '/src/img/webp-items/agents-sacrificial-knife.webp',
     '/src/img/webp-items/agnidus-agate-chunk.webp',
     '/src/img/webp-items/agnidus-agate-fragment.webp',
     '/src/img/webp-items/agnidus-agate-gemstone.webp',
     '/src/img/webp-items/agnidus-agate-sliver.webp',
+    '/src/img/webp-items/ashen-heart.webp',
     '/src/img/webp-items/basalt-pillar.webp',
     '/src/img/webp-items/bit-of-aerosiderite.webp',
     '/src/img/webp-items/black-bronze-horn.webp',
@@ -78,6 +76,7 @@ const resourcesToPrecache = [
     '/src/img/webp-items/guide-to-resistance.webp',
     '/src/img/webp-items/guide-to-transience.webp',
     '/src/img/webp-items/heavy-horn.webp',
+    '/src/img/webp-items/hellfire-butterfly.webp',
     '/src/img/webp-items/heros-wit.webp',
     '/src/img/webp-items/hoarfrost-core.webp',
     '/src/img/webp-items/hunters-sacrificial-knife.webp',
@@ -103,6 +102,7 @@ const resourcesToPrecache = [
     '/src/img/webp-items/mist-veiled-lead-elixir.webp',
     '/src/img/webp-items/mist-veiled-mercury-elixir.webp',
     '/src/img/webp-items/mist-veiled-primo-elixir.webp',
+    '/src/img/webp-items/molten-moment.webp',
     '/src/img/webp-items/mora.webp',
     '/src/img/webp-items/mystic-enhancement-ore.webp',
     '/src/img/webp-items/naku-weed.webp',
